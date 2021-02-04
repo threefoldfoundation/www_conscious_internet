@@ -7,7 +7,7 @@
         :src="$page.markdownPage.solution_image2.src"
       /> -->
 
-      <Header
+    <!--  <Header
         v-if="
           $page.markdownPage.id !== 'contact' &&
           $page.markdownPage.header_title &&
@@ -19,12 +19,12 @@
         :excerpt="$page.markdownPage.header_excerpt"
         :button="$page.markdownPage.button"
         :link="$page.markdownPage.link"
-      />
+      /> -->
 
-      <SolutionsHeader
+      <!-- <SolutionsHeader
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
-      /> 
+      /> -->
 
       <SolutionsHeader
         v-if="$page.markdownPage.headerSolution4"
@@ -36,11 +36,11 @@
         :src="$page.markdownPage.solution_image3.src"
       />
       
-      <NewCard
+      <!-- <NewCard
         v-for="card in $page.markdownPage.cards3"
         :key="card.id"
         :card="card"
-      />
+      /> -->
       
       <!-- <WithComparisonTable
         v-if="$page.markdownPage.plans &&
@@ -56,27 +56,27 @@
       /> -->
       
   
-      <Features
+      <!-- <Features
         v-if="$page.markdownPage.features3.length > 0"
         :main="$page.markdownPage.featuresMain3"
         :features="$page.markdownPage.features3"
-      />
+      /> -->
 
-      <HowItWorks
+      <!-- <HowItWorks
         v-if="$page.markdownPage.howItWorks.length > 0"
         :HIWData="$page.markdownPage.howItWorks"
         :main="$page.markdownPage.howItWorksMain"
-      />
+      /> -->
 
-      <SolutionsHeader
+      <!-- <SolutionsHeader
         v-if="$page.markdownPage.headerSolution"
         :header="$page.markdownPage.headerSolution"
-      />
+      /> -->
 
-      <GetInTouch
+      <!-- <GetInTouch
         :contacts="$page.markdownPage.contactData"
         v-if="$page.markdownPage.contactData.length > 0"
-      />
+      /> -->
 
       <!-- <ShowcaseProducts
         :products="$page.markdownPage.productData"
@@ -86,21 +86,21 @@
         "
       /> -->
 
-      <g-image
+      <!-- <g-image
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
-      />
+      /> -->
 
       <SolutionsHeader
         v-if="$page.markdownPage.headerSolution2"
         :header="$page.markdownPage.headerSolution2"
       />
 
-      <Features
+      <!-- <Features
         v-if="$page.markdownPage.features.length > 0"
         :main="$page.markdownPage.featuresMain"
         :features="$page.markdownPage.features"
-      />
+      /> -->
 
       <!-- <HowItWorks
         v-if="$page.markdownPage.howItWorks.length > 0"
@@ -108,10 +108,10 @@
         :main="$page.markdownPage.howItWorksMain"
       /> -->
 
-      <VerticalNav
+      <!-- <VerticalNav
         :slides="$page.markdownPage.slides"
         v-if="$page.markdownPage.slide && $page.markdownPage.slides.length > 0"
-      />
+      /> -->
      
       <NewCard
         v-for="card in $page.markdownPage.cards"
@@ -119,56 +119,56 @@
         :card="card"
       />
 
-      <SolutionsHeader
+      <!-- <SolutionsHeader
         v-if="$page.markdownPage.headerSolution3"
         :header="$page.markdownPage.headerSolution3"
-      />
+      /> -->
 
-      <Comparison
+      <!-- <Comparison
         v-if="
           $page.markdownPage.comparisonSecs &&
           $page.markdownPage.comparisonSecs.length > 0
         "
         :main="$page.markdownPage.comparisonMain"
         :sections="$page.markdownPage.comparisonSecs"
-      />
+      /> -->
 
-      <Features
+      <!-- <Features
         v-if="$page.markdownPage.features2.length > 0"
         :main="$page.markdownPage.featuresMain2"
         :features="$page.markdownPage.features2"
-      />
+      /> -->
 
       <!-- <logoShowcase
         v-if="$page.markdownPage.logos"
         :logos="$page.markdownPage.logos"
       /> -->
 
-      <NewCard
+      <!-- <NewCard
         v-for="card in $page.markdownPage.cards2"
         :key="card.id"
         :card="card"
-      />
+      /> -->
 
-      <CallToAction
+      <!-- <CallToAction
         v-if="$page.markdownPage.cta"
         :cta="$page.markdownPage.cta"
-      />
+      /> -->
 
-      <g-image
+      <!-- <g-image
         v-if="$page.markdownPage.solution_image4"
         :src="$page.markdownPage.solution_image4.src"
-      />
+      /> -->
 
-      <SignUp
+      <!-- <SignUp
         v-if="$page.markdownPage.signup"
         :signup="$page.markdownPage.signup"
-      />
+      /> -->
 
-      <BrandPanel
+      <!-- <BrandPanel
         :brand="$page.markdownPage.brandPanel"
         v-if="$page.markdownPage.brandPanel"
-      />
+      /> -->
 
       <!-- <SplitWithImage
       :split="$page.markdownPage.splitWithImage"
@@ -184,16 +184,16 @@
         id
         path
         content
-        header_excerpt
-        header_altImg
-        header_title
-        header_image
-        button
-        link
-        solution_image
+     #  header_excerpt
+     #  header_altImg
+     #  header_title
+     #  header_image
+     #  button
+     #  link
+     #  solution_image
      #  solution_image2
         solution_image3
-        solution_image4
+     #  solution_image4
         slides{
           id
           title

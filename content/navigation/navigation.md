@@ -1,51 +1,34 @@
 ---
 id: navigation
 navLinks:
-  - name: Why
-    link: /why
+  - name: Projects
+    link: /partners
     external: false
     expandable: false
 
-  - name: Tech
-    link: /tech
+  - name: People
+    link: /team
     external: false
     expandable: false
 
-  - name: 3Node
-    link: /3node
+  - name: Council
+    link: /council
     external: false
     expandable: false
 
-  - name: Token
-    link: /token
+  - name: ''
+    link: ''
     external: false
     expandable: false
-
-  - name: More
-    link: /more
-    external: false
-    expandable: true
     submenu:
-      - title: Pre-Register
-        path: /pre-register
-
-      - title: Team
-        path: /team
-
-      - title: Partners
-        path: /partners
-
-      - title: NewsRoom
-        path: /news
-
-      - title: Blog
-        path: /blog
-
-      - title: Community
-        path: https://forums.threefold.io/
-        external: true
+      - title: ''
+        path: ''
+        external: false
+        expandable: false
 
 social:
   - icon: telegram-plane
     link: https://t.me/threefoldnews
 ---
+
+<!--      -->

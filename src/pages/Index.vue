@@ -9,68 +9,74 @@
         :link="$page.markdownPage.link"
       />
 
-      <SolutionsHeader
-        v-if="$page.markdownPage.header"
-        :header="$page.markdownPage.header"
+      <HowItWorks
+        v-if="$page.markdownPage.howItWorks.length > 0"
+        :HIWData="$page.markdownPage.howItWorks"
+        :main="$page.markdownPage.howItWorksMain"
       />
 
-      <ShowcaseProducts
+      <!-- <SolutionsHeader
+        v-if="$page.markdownPage.header"
+        :header="$page.markdownPage.header"
+      /> -->
+
+      <!-- <ShowcaseProducts
         :main="$page.markdownPage.productsMain"
         :products="$page.markdownPage.productData"
         v-if="
           $page.markdownPage.productData &&
           $page.markdownPage.productData.length > 0
         "
-      />
+      /> -->
 
-      <Features
+      <!-- <Features
         :main="$page.markdownPage.featuresMain"
         :features="$page.markdownPage.features"
-      />
+      /> -->
       
-      <SolutionsHeader
+      <!-- <SolutionsHeader
         v-if="$page.markdownPage.headerSolution"
         :header="$page.markdownPage.headerSolution"
-      />
+      /> -->
 
-      <g-image
+      <!-- <g-image
         v-if="$page.markdownPage.solution_image_2"
         :src="$page.markdownPage.solution_image_2.src"
-      />
+      /> -->
 
-      <NewCard
+      <!-- <NewCard
         v-for="card in $page.markdownPage.cards"
         :key="card.id"
         :card="card"
-      />
+      /> -->
     </div>
 
-    <Features
+    <!-- <Features
       :main="$page.markdownPage.featuresMain2"
       :features="$page.markdownPage.features2"
-    />
+    /> -->
 
-    <logoShowcase
+    <!-- <logoShowcase
       v-if="$page.markdownPage.logos.length > 0"
       :logos="$page.markdownPage.logos"
-    />
+    /> -->
 
-    <InTheNews
+    <!-- <InTheNews
       v-if="$page.markdownPage.inTheNews"
       :news="$page.markdownPage.inTheNews"
-    />
+    /> -->
 
-    <SignUp
+    <!-- <SignUp
       :signup="$page.markdownPage.signup"
       v-if="$page.markdownPage.signup"
-    />
+    /> -->
 
-    <CallToAction v-if="$page.markdownPage.cta" :cta="$page.markdownPage.cta" />
+    <!-- <CallToAction v-if="$page.markdownPage.cta" :cta="$page.markdownPage.cta" /> -->
 
-    <g-image
+    <!-- <g-image
       v-if="$page.markdownPage.solution_image"
       :src="$page.markdownPage.solution_image.src"
-    />
+    /> -->
 
     <!-- <Getintouch :contacts="contacts"/> -->
   </Layout>
@@ -87,8 +93,8 @@
         header_excerpt
         button
         link
-        solution_image
-        solution_image_2
+      # solution_image
+      # solution_image_2
         cards{
           id
           title
@@ -169,6 +175,16 @@
           button
           link
         }
+        howItWorksMain{
+         id
+         title
+         image
+       }
+        howItWorks{
+         id
+         title
+         content
+       }
         inTheNews {
           id
           content
@@ -193,10 +209,12 @@ import SignUp from "~/components/custom/sections/SignUp.vue";
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
 import InTheNews from "~/components/marketing/sections/logo-clouds/off_white_grid.vue";
 import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
+import HowItWorks from "~/components/custom/sections/HowItWorks.vue";
 
 export default {
   components: {
     SolutionsHeader,
+    HowItWorks,
     Header,
     Features,
     NewCard,
