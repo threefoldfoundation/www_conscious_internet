@@ -1,14 +1,14 @@
 set -e
 set +x
 
-export NAME=threefold_farming
+export NAME=consciousinternet_org
 
 # INSTALL CRYSTAL TOOLS
 
 sudo rm -rf `which ct`
 
 case "$OSTYPE" in
-  linux*) 
+  linux*)
         sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/crystaluniverse/crystaltools/master/tools/install.sh)"
         sudo chmod 777 /usr/local/bin/ct
         sudo npm install --global @gridsome/cli
@@ -19,7 +19,7 @@ case "$OSTYPE" in
         brew update && brew install node
         npm install --global @gridsome/cli
         npm install --global nvm
-        ;; 
+        ;;
 esac
 
 # GET REQUIRED REPOSITORIES
@@ -43,6 +43,6 @@ rm -rf .cache
 
 set +e
 
-npm install 
+npm install
 
 source run.sh
