@@ -11,8 +11,8 @@ navLinks:
     external: false
     expandable: false
 
-  - name: Council
-    link: /council
+  - name: WISDOM COUNCIL
+    link: /wisdomcouncil
     external: false
     expandable: false
 

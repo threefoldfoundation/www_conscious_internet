@@ -1,8 +1,8 @@
 ---
-id: token
-header_title: What is ThreeFold Token? 
+id: wisdomcouncil
+header_title: WISDOM COUNCIL
 header_image: ./token_header.png
-header_altImg: token_header
+header_altImg: wisdom_council
 header_excerpt: The currency of the peer-to-peer internet, the ThreeFold Grid. Current value of TFT on ThreeFold Grid = $0.10
 button: Get TFT
 link: https://app.liquid.com/quick-exchange/
