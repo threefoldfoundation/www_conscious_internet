@@ -1,7 +1,7 @@
 set -e
 set +x
 
-export NAME=consciousinternet_org
+export NAME=conscious_internet
 
 # INSTALL CRYSTAL TOOLS
 
