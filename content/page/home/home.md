@@ -1,7 +1,7 @@
 ---
 id: home
 header_title: Alliance for a Conscious Internet 
-header_image: ./CI_Home.png 
+header_image: ./CIAsset.png 
 header_excerpt: A planetary movement of people and organisations that take action now to shape a conscious digital world that empowers everyone equally, across borders.
 link: /3node
 howItWorksMain: participate_main
