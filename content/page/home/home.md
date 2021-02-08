@@ -1,9 +1,8 @@
 ---
 id: home
-header_title: Be the Internet
-header_image: ./farming_header2.png 
-header_excerpt: This is the era of decentralization. Plug in a server (3Node) from your home or office and start generating passive revenue by selling decentralized storage and compute capacity.
-button: Meet the 3Node
+header_title: Alliance for a Conscious Internet 
+header_image: ./CI_Home.png 
+header_excerpt: A planetary movement of people and organisations that take action now to shape a conscious digital world that empowers everyone equally, across borders.
 link: /3node
 howItWorksMain: participate_main
 howItWorks: [participate_sec1, participate_sec2, participate_sec3]
