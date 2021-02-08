@@ -33,16 +33,16 @@
         :main="$page.markdownPage.featuresMain"
         :features="$page.markdownPage.features"
       /> -->
-      
-      <!-- <SolutionsHeader
+
+      <SolutionsHeader
         v-if="$page.markdownPage.headerSolution"
         :header="$page.markdownPage.headerSolution"
-      /> -->
+      />
 
-      <!-- <g-image
+      <g-image
         v-if="$page.markdownPage.solution_image_2"
         :src="$page.markdownPage.solution_image_2.src"
-      /> -->
+      />
 
       <!-- <NewCard
         v-for="card in $page.markdownPage.cards"
@@ -73,10 +73,10 @@
 
     <!-- <CallToAction v-if="$page.markdownPage.cta" :cta="$page.markdownPage.cta" /> -->
 
-    <!-- <g-image
+    <g-image
       v-if="$page.markdownPage.solution_image"
       :src="$page.markdownPage.solution_image.src"
-    /> -->
+    />
 
     <!-- <Getintouch :contacts="contacts"/> -->
   </Layout>
@@ -119,15 +119,15 @@
        }
        featuresMain{
           id
-          title 
-          btn 
+          title
+          btn
           link
           content
         }
         featuresMain2{
           id
-          title 
-          btn 
+          title
+          btn
           link
           content
         }
@@ -138,13 +138,13 @@
         }
         features{
           id
-          title 
+          title
           svg
           content
         }
         features2{
           id
-          title 
+          title
           svg
           content
         }
@@ -193,7 +193,7 @@
             logo
           }
         }
-    }  
+    }
   }
 
 </page-query>

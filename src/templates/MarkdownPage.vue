@@ -35,27 +35,27 @@
         v-if="$page.markdownPage.solution_image3"
         :src="$page.markdownPage.solution_image3.src"
       />
-      
+
       <!-- <NewCard
         v-for="card in $page.markdownPage.cards3"
         :key="card.id"
         :card="card"
       /> -->
-      
+
       <!-- <WithComparisonTable
         v-if="$page.markdownPage.plans &&
         $page.markdownPage.plans.length > 0"
         :plans="$page.markdownPage.plans"
       /> -->
-    
+
       <!-- <FourTiersWithToggle
-        v-if="$page.markdownPage.pricingPlans && 
+        v-if="$page.markdownPage.pricingPlans &&
         $page.markdownPage.pricingPlans.length > 0"
         :main="$page.markdownPage.pricing_plansMain"
         :pricingPlans="$page.markdownPage.pricingPlans"
       /> -->
-      
-  
+
+
       <!-- <Features
         v-if="$page.markdownPage.features3.length > 0"
         :main="$page.markdownPage.featuresMain3"
@@ -68,10 +68,10 @@
         :main="$page.markdownPage.howItWorksMain"
       /> -->
 
-      <!-- <SolutionsHeader
+      <SolutionsHeader
         v-if="$page.markdownPage.headerSolution"
         :header="$page.markdownPage.headerSolution"
-      /> -->
+      />
 
       <!-- <GetInTouch
         :contacts="$page.markdownPage.contactData"
@@ -86,10 +86,10 @@
         "
       /> -->
 
-      <!-- <g-image
+      <g-image
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
-      /> -->
+      />
 
       <SolutionsHeader
         v-if="$page.markdownPage.headerSolution2"
@@ -112,7 +112,7 @@
         :slides="$page.markdownPage.slides"
         v-if="$page.markdownPage.slide && $page.markdownPage.slides.length > 0"
       /> -->
-     
+
       <NewCard
         v-for="card in $page.markdownPage.cards"
         :key="card.id"
@@ -325,22 +325,22 @@
        }
         featuresMain{
           id
-          title 
-          btn 
+          title
+          btn
           link
           content
         }
         featuresMain2{
           id
           title
-          btn 
+          btn
           link
           content
         }
         featuresMain3{
           id
           title
-          btn 
+          btn
           link
           content
         }
@@ -350,19 +350,19 @@
         }
         features{
           id
-          title 
+          title
           svg
           content
         }
         features2{
           id
-          title 
+          title
           svg
           content
         }
         features3{
           id
-          title 
+          title
           svg
           content
         }
