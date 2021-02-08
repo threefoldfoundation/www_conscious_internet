@@ -5,7 +5,7 @@ header_image: ./CI_Home.png
 header_excerpt: A planetary movement of people and organisations that take action now to shape a conscious digital world that empowers everyone equally, across borders.
 link: /3node
 howItWorksMain: participate_main
-howItWorks: [participate_sec1, participate_sec2, participate_sec3]
+howItWorks: [participate_sec1]
 ---
 
 <!--  -->

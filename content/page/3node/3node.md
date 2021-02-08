@@ -7,7 +7,7 @@ header_excerpt: Plug & Earn nodes don't require any technical knowledge to set u
 button: Pre-Register Today
 link: /pre-register
 howItWorksMain: participate_main
-howItWorks: [participate_sec1, participate_sec2, participate_sec3]
+howItWorks: [participate_sec1]
 headerSolution : headerParticipate
 solution_image: ./participate_main2.png 
 featuresMain: participate_features

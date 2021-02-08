@@ -2,11 +2,6 @@
   <Layout :hideHeader="true" :disableScroll="true">
     <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
 
-    <!-- <g-image
-        v-if="$page.markdownPage.solution_image2"
-        :src="$page.markdownPage.solution_image2.src"
-      /> -->
-
     <!--  <Header
         v-if="
           $page.markdownPage.id !== 'contact' &&
@@ -21,41 +16,46 @@
         :link="$page.markdownPage.link"
       /> -->
 
-      <!-- <SolutionsHeader
-        v-if="$page.markdownPage.header"
-        :header="$page.markdownPage.header"
-      /> -->
+      <SolutionsHeader
+        v-if="$page.markdownPage.headerSolution"
+        :header="$page.markdownPage.headerSolution"
+      />
+
+      <g-image
+        v-if="$page.markdownPage.solution_image"
+        :src="$page.markdownPage.solution_image.src"
+      />
 
       <SolutionsHeader
-        v-if="$page.markdownPage.headerSolution4"
-        :header="$page.markdownPage.headerSolution4"
+        v-if="$page.markdownPage.headerSolution2"
+        :header="$page.markdownPage.headerSolution2"
       />
 
       <g-image
         v-if="$page.markdownPage.solution_image3"
         :src="$page.markdownPage.solution_image3.src"
       />
-      
+
       <!-- <NewCard
         v-for="card in $page.markdownPage.cards3"
         :key="card.id"
         :card="card"
       /> -->
-      
+
       <!-- <WithComparisonTable
         v-if="$page.markdownPage.plans &&
         $page.markdownPage.plans.length > 0"
         :plans="$page.markdownPage.plans"
       /> -->
-    
+
       <!-- <FourTiersWithToggle
-        v-if="$page.markdownPage.pricingPlans && 
+        v-if="$page.markdownPage.pricingPlans &&
         $page.markdownPage.pricingPlans.length > 0"
         :main="$page.markdownPage.pricing_plansMain"
         :pricingPlans="$page.markdownPage.pricingPlans"
       /> -->
-      
-  
+
+
       <!-- <Features
         v-if="$page.markdownPage.features3.length > 0"
         :main="$page.markdownPage.featuresMain3"
@@ -66,11 +66,6 @@
         v-if="$page.markdownPage.howItWorks.length > 0"
         :HIWData="$page.markdownPage.howItWorks"
         :main="$page.markdownPage.howItWorksMain"
-      /> -->
-
-      <!-- <SolutionsHeader
-        v-if="$page.markdownPage.headerSolution"
-        :header="$page.markdownPage.headerSolution"
       /> -->
 
       <!-- <GetInTouch
@@ -85,16 +80,6 @@
           $page.markdownPage.productData.length > 0
         "
       /> -->
-
-      <!-- <g-image
-        v-if="$page.markdownPage.solution_image"
-        :src="$page.markdownPage.solution_image.src"
-      /> -->
-
-      <SolutionsHeader
-        v-if="$page.markdownPage.headerSolution2"
-        :header="$page.markdownPage.headerSolution2"
-      />
 
       <!-- <Features
         v-if="$page.markdownPage.features.length > 0"
@@ -112,7 +97,7 @@
         :slides="$page.markdownPage.slides"
         v-if="$page.markdownPage.slide && $page.markdownPage.slides.length > 0"
       /> -->
-     
+
       <NewCard
         v-for="card in $page.markdownPage.cards"
         :key="card.id"
@@ -190,9 +175,9 @@
      #  header_image
      #  button
      #  link
-     #  solution_image
+        solution_image
      #  solution_image2
-        solution_image3
+     #  solution_image3
      #  solution_image4
         slides{
           id
@@ -325,22 +310,22 @@
        }
         featuresMain{
           id
-          title 
-          btn 
+          title
+          btn
           link
           content
         }
         featuresMain2{
           id
           title
-          btn 
+          btn
           link
           content
         }
         featuresMain3{
           id
           title
-          btn 
+          btn
           link
           content
         }
@@ -350,19 +335,19 @@
         }
         features{
           id
-          title 
+          title
           svg
           content
         }
         features2{
           id
-          title 
+          title
           svg
           content
         }
         features3{
           id
-          title 
+          title
           svg
           content
         }
