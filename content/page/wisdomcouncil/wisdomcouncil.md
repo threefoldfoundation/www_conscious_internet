@@ -4,8 +4,9 @@ header_title: WISDOM COUNCIL
 header_image: ./wisdom.png
 header_altImg: wisdom_council
 header_excerpt:
-solution_image: ./wisdom.png
 headerSolution: headerWisdom
+solution_image: ./wisdom.png
+headerSolution2: headerWisdom2
 ---
 
 <!-- howItWorksMain: token_main

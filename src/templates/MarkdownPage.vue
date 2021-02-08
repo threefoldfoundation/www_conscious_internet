@@ -2,11 +2,6 @@
   <Layout :hideHeader="true" :disableScroll="true">
     <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
 
-    <!-- <g-image
-        v-if="$page.markdownPage.solution_image2"
-        :src="$page.markdownPage.solution_image2.src"
-      /> -->
-
     <!--  <Header
         v-if="
           $page.markdownPage.id !== 'contact' &&
@@ -21,14 +16,19 @@
         :link="$page.markdownPage.link"
       /> -->
 
-      <!-- <SolutionsHeader
-        v-if="$page.markdownPage.header"
-        :header="$page.markdownPage.header"
-      /> -->
+      <SolutionsHeader
+        v-if="$page.markdownPage.headerSolution"
+        :header="$page.markdownPage.headerSolution"
+      />
+
+      <g-image
+        v-if="$page.markdownPage.solution_image"
+        :src="$page.markdownPage.solution_image.src"
+      />
 
       <SolutionsHeader
-        v-if="$page.markdownPage.headerSolution4"
-        :header="$page.markdownPage.headerSolution4"
+        v-if="$page.markdownPage.headerSolution2"
+        :header="$page.markdownPage.headerSolution2"
       />
 
       <g-image
@@ -68,11 +68,6 @@
         :main="$page.markdownPage.howItWorksMain"
       /> -->
 
-      <SolutionsHeader
-        v-if="$page.markdownPage.headerSolution"
-        :header="$page.markdownPage.headerSolution"
-      />
-
       <!-- <GetInTouch
         :contacts="$page.markdownPage.contactData"
         v-if="$page.markdownPage.contactData.length > 0"
@@ -85,16 +80,6 @@
           $page.markdownPage.productData.length > 0
         "
       /> -->
-
-      <g-image
-        v-if="$page.markdownPage.solution_image"
-        :src="$page.markdownPage.solution_image.src"
-      />
-
-      <SolutionsHeader
-        v-if="$page.markdownPage.headerSolution2"
-        :header="$page.markdownPage.headerSolution2"
-      />
 
       <!-- <Features
         v-if="$page.markdownPage.features.length > 0"
@@ -190,9 +175,9 @@
      #  header_image
      #  button
      #  link
-     #  solution_image
+        solution_image
      #  solution_image2
-        solution_image3
+     #  solution_image3
      #  solution_image4
         slides{
           id
