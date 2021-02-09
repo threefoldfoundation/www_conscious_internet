@@ -7,6 +7,8 @@ header_excerpt:
 headerSolution: headerWisdom
 solution_image: ./wisdom.png
 headerSolution2: headerWisdom2
+cards: [card_rishi_chidananda, card_isabelle_peters, card_michael_wellesley_wesley, card_sophie_monpeyssen]
+cards2: [card_sophie_monpeyssen]
 ---
 
 <!-- howItWorksMain: token_main
@@ -25,11 +27,13 @@ button:
 link: https://app.liquid.com/quick-exchange/
 featuresMain3: token_features
 features3: [token_feature1, token_feature2, token_feature3, token_feature4, token_feature5, token_feature6]
-cards: [token_card1]
+
 headerSolution3: headerToken3
 comparisonMain: token_comparison
 comparisonSecs:
   [token_comparison1, token_comparison2, token_comparison3]
 cards2: [token2_card1]
 cta: home_token
+
+
 -->

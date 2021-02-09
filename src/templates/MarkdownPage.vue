@@ -104,6 +104,12 @@
         :card="card"
       />
 
+      <NewCard
+        v-for="card in $page.markdownPage.cards2"
+        :key="card.id"
+        :card="card"
+      />
+
       <!-- <SolutionsHeader
         v-if="$page.markdownPage.headerSolution3"
         :header="$page.markdownPage.headerSolution3"
@@ -129,12 +135,6 @@
         :logos="$page.markdownPage.logos"
       /> -->
 
-      <!-- <NewCard
-        v-for="card in $page.markdownPage.cards2"
-        :key="card.id"
-        :card="card"
-      /> -->
-
       <!-- <CallToAction
         v-if="$page.markdownPage.cta"
         :cta="$page.markdownPage.cta"
@@ -158,6 +158,11 @@
       <!-- <SplitWithImage
       :split="$page.markdownPage.splitWithImage"
         v-if="$page.markdownPage.splitWithImage"
+      /> -->
+
+      <!-- <InTheNews
+        v-if="$page.markdownPage.inTheNews"
+        :news="$page.markdownPage.inTheNews"
       /> -->
     </div>
   </Layout>
@@ -379,6 +384,7 @@
           title
           content
         }
+
     }
   }
 
@@ -401,6 +407,7 @@ import BrandPanel from "~/components/marketing/sections/cta-sections/BrandPanel.
 import SplitWithImage from "~/components/marketing/sections/cta-sections/SplitWithImage.vue";
 import FourTiersWithToggle from "~/components/marketing/sections/pricing/four_tiers_with_toggle.vue";
 import WithComparisonTable from "~/components/marketing/sections/pricing/with_comparison_table.vue";
+import WisdomCouncilMemebersGrid from "~/components/marketing/sections/logo-clouds/off_white_grid.vue";
 
 export default {
   components: {
@@ -420,6 +427,7 @@ export default {
     SplitWithImage,
     FourTiersWithToggle,
     WithComparisonTable,
+
   },
   metaInfo() {
     return {
