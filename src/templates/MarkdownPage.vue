@@ -104,12 +104,6 @@
         :card="card"
       />
 
-      <NewCard
-        v-for="card in $page.markdownPage.cards2"
-        :key="card.id"
-        :card="card"
-      />
-
       <!-- <SolutionsHeader
         v-if="$page.markdownPage.headerSolution3"
         :header="$page.markdownPage.headerSolution3"

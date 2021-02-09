@@ -8,7 +8,6 @@ headerSolution: headerWisdom
 solution_image: ./wisdom.png
 headerSolution2: headerWisdom2
 cards: [card_rishi_chidananda, card_isabelle_peters, card_michael_wellesley_wesley, card_sophie_monpeyssen]
-cards2: [card_sophie_monpeyssen]
 ---
 
 <!-- howItWorksMain: token_main
