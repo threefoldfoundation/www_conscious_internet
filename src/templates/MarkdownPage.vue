@@ -194,15 +194,6 @@
           order
           content
         }
-        cards2{
-          id
-          title
-          image
-          button
-          link
-          order
-          content
-        }
         cards3{
           id
           title
