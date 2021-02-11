@@ -16,7 +16,7 @@
 
           <g-image
             class="h-10"
-            src="/img/tf_icon_white.svg"
+            src="/img/ACI_ICON.svg"
             alt="Company name"
             v-else
           />
