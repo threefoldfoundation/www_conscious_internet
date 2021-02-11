@@ -2,7 +2,7 @@
 id: card_lawrence_bloom
 title: LAWRENCE BLOOM
 image: ./lawrence_bloom.jpg
-button: MESSAGE FROM SOPHIE
+button: MESSAGE FROM LAWRENCE
 link:  https://vimeo.com/414707207
 order: 1
 company:
