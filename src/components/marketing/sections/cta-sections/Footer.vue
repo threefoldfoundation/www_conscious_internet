@@ -9,7 +9,7 @@
         <div class="space-y-8 xl:col-span-1">
           <g-image
             class="h-10"
-            src="/img/tf_icon_black.svg"
+            src="/img/ACI_ICON.svg"
             alt="Company name"
             v-if="theme == 'light'"
           />
