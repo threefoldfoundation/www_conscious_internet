@@ -1,9 +1,9 @@
 ---
 id: wisdomcouncil
 header_title: WISDOM COUNCIL
-header_image: ./wisdom.png
+header_image: ./wisdom_council.png
 header_altImg: wisdom_council
-header_excerpt:
+header_excerpt: ''
 headerSolution: headerWisdom
 solution_image: ./wisdom.png
 headerSolution2: headerWisdom2
