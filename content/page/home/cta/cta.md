@@ -1,6 +1,6 @@
 ---
 id: home_cta
 title: If not Us, Who? If not Now, When?
-button: ''
-link: ''
+button: 'JOIN US'
+link: 'mailto:kristine@threefold.io'
 ---

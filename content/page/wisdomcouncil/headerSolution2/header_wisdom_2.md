@@ -1,6 +1,6 @@
 ---
-id: headerWisdom2
-subtitle:
+id: header_wisdom_2
+subtitle: ''
 ---
 
 In order to make balanced, fair and effective decisions regarding Three Fold Foundation funds distribution, ThreeFold Foundation has adopted the Wisdom Council system as a resource model of harmonious communication
