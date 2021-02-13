@@ -1,5 +1,5 @@
 
-# ThreeFold Website www_conscious_internet
+# Alliance for a Conscious Internet website by ThreeFold
 
 ### how to get started
 
