@@ -149,10 +149,11 @@
           </div>
         </div>
       </div> -->
-      <div class=" border-t border-gray-200 pt-8">
-        <p class="text-base leading-6 text-gray-400 xl:text-center">
-          &#xA9; 2021 Alliance for a Conscious Internet, All rights reserved.
-        </p>
+      <div class="border-t border-gray-200 pt-8">
+        <div
+          class="text-base leading-6 text-gray-400 xl:text-center"
+          v-html="record.content"
+        ></div>
       </div>
     </div>
   </footer>

@@ -62,6 +62,7 @@ query {
       dribbble
       instagram
       description
+      content
       items{
         title
         links{
