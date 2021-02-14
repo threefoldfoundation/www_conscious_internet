@@ -5,7 +5,8 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-    siteName: 'Threefold Farming',
+    siteName: 'Alliance for a Conscious Internet',
+    pathPrefix: '/aci',
     plugins: [
 
         // Local models
@@ -203,7 +204,7 @@ module.exports = {
                 path: './content/page/**/home/**/*.md',
             }
         },
-        
+
         {
             use: '@gridsome/source-filesystem',
             options: {
@@ -438,7 +439,7 @@ module.exports = {
             path: '/news/post/:id',
             component: '~/templates/NewsPost.vue'
         }],
-       
+
         Person: [{
             path: '/team/:id',
             component: '~/templates/Person.vue'

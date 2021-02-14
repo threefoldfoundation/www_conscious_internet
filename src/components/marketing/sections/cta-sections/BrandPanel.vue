@@ -28,7 +28,7 @@
           </div>
         </div>
         <div class="relative pb-3/5 -mt-6 md:pb-1/2">
-          <g-image
+          <img
             class="absolute brandpanel inset-0 w-full h-full transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
             :src="image"
             :alt="brand.title"

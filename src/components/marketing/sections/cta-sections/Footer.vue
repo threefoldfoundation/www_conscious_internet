@@ -7,16 +7,16 @@
     <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="space-y-8 xl:col-span-1">
-          <!-- <g-image
+          <!-- <img
             class="h-10"
-            src="/img/ACI_ICON.svg"
+            :src="require(`!!assets-loader!@images/ACI_ICON.svg`)"
             alt="Company name"
             v-if="theme == 'light'"
           /> -->
 
-          <!-- <g-image
+          <!-- <img
             class="h-10"
-            src="/img/ACI_ICON.svg"
+            :src="require(`!!assets-loader!@images/ACI_ICON.svg`)"
             alt="Company name"
             v-else
           /> -->
@@ -177,5 +177,5 @@ export default {
 <style scoped>
 ul {
   list-style-type: none;
-};
+}
 </style>

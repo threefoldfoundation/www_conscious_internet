@@ -12,7 +12,7 @@
           :to="partner.path"
           class="col-span-1 flex justify-center py-8 px-8 m-1 bg-gray-100"
         >
-          <g-image
+          <img
             v-if="partner.logo"
             class="max-h-12"
             :src="require(`!!assets-loader!@images/${partner.logo}`)"

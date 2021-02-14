@@ -10,20 +10,10 @@
       <div class="flex items-center justify-between px-4 py-3 sm:p-0">
         <div class="inline-flex items-center flex-shrink-0">
           <a href="/" class="flex">
-            <img
-              src="/img/ACI_LOGOTYPE.svg"
-              class="mr-3 fill-current"
-              width="180"
-              v-if="theme == 'light'"
-              alt=""
-            />
-
-            <img
-              src="/img/ACI_LOGOTYPE.svg"
-              class="mr-3 fill-current"
-              width="180"
-              v-else
-              alt=""
+            <g-image
+              :src="require(`!!assets-loader!@images/ACI_LOGOTYPE.svg`)"
+              class="mr-3 fill-current logo"
+              alt="ACI logo"
             />
             <!-- <span
               class="hidden md:block font-semibold text-xl tracking-tight"
@@ -308,7 +298,9 @@ a.active--exact.active {
   background-color: rgba(237, 242, 247, 1);
   border-radius: 0.5rem;
 }
-
+.logo {
+  max-width: 180px;
+}
 .navbar {
   width: auto;
 }
