@@ -6,7 +6,6 @@
 
 module.exports = {
     siteName: 'Alliance for a Conscious Internet',
-    pathPrefix: '/aci',
     plugins: [
 
         // Local models
