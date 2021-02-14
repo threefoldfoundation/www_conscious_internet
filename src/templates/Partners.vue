@@ -3,7 +3,7 @@
     <TagFilterHeader
       :tags="tags"
       selected="all"
-      v-if="$page.tags.edges.length > 1"
+      v-if="$page.tags.edges.length > 0"
     />
     <div class="container mt-8 sm:pxi-0 mx-auto overflow-x-hidden">
       <div class="flex flex-wrap with-large pt-8 pb-8 mx-4 sm:-mx-4">
@@ -43,7 +43,7 @@ query ($private: Int){
     }
   }
   
-  tags: allProjectTag (filter: { title: {in: ["farming"]}}) {
+  tags: allProjectTag {
      edges{
       node{
         id
