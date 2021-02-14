@@ -23,6 +23,15 @@ body {
     color: #70cfc7 !important;
 }
 
+.main-color {
+    background-color: #169dd9;
+    transition: all 300ms ease-in-out;
+}
+
+.main-color:hover {
+    background-color: rgba(22, 157, 217, 0.5);
+}
+
 pre {
     @apply border-l;
     @apply border-l-2;

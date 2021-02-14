@@ -11,7 +11,7 @@
       ></div>
       <div>
         <g-link
-          class="bg-gray-900 learn-button hover:bg-gray-700 text-gray-100 px-5 py-3 mr-3 font-semibold rounded shadow"
+          class="main-color learn-button hover:main-color-700 text-gray-100 px-5 py-3 mr-3 font-semibold rounded shadow"
           v-if="header.btn1"
           :to="header.link1"
           >{{ header.btn1 }}</g-link
