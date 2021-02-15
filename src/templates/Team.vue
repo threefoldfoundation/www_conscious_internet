@@ -73,7 +73,6 @@ import Pagination from "~/components/custom/Pagination.vue";
 export default {
   components: {
     PostListItem,
-    TagFilterHeader,
     Pagination,
   },
   computed: {

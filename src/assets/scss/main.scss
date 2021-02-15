@@ -156,11 +156,10 @@ button:focus {
         .post-card-image-link {
             @apply relative;
             min-height: 400px;
-            height: auto;
         }
         .post-card-image {
             @apply absolute;
-            @apply h-auto;
+            @apply h-full;
             @apply w-full;
             @apply object-cover;
             @apply rounded-lg;
