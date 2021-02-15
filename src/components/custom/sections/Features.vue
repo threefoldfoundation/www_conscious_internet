@@ -26,7 +26,7 @@
     </div>
     <div class="text-center" v-if="main.btn">
       <g-link
-        class="main-color learn-button hover:main-color-700 text-gray-100 px-5 py-3 mr-3 font-semibold rounded shadow"
+        class="bg-main-color learn-button hover:bg-main-color-700 text-gray-100 px-5 py-3 mr-3 font-semibold rounded shadow"
         :to="main.link"
         >{{ main.btn }}</g-link
       >

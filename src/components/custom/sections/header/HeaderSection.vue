@@ -2,16 +2,16 @@
   <section class="py-12 px-4 text-center">
     <div class="w-full max-w-2xl mx-auto">
       <span class="text-sm font-semibold">{{ header.title }}</span>
-      <h2 class="text-4xl mt-2 mb-6 leading-tight font-heading">
+      <h2 class="text-main-color text-4xl mt-2 mb-6 leading-tight font-heading">
         {{ header.subtitle }}
       </h2>
       <div
         v-html="header.content"
-        class="mb-8 text-gray-700 leading-relaxed"
+        class="text-main-color mb-8 text-gray-700 leading-relaxed"
       ></div>
       <div>
         <g-link
-          class="main-color learn-button hover:main-color-700 text-gray-100 px-5 py-3 mr-3 font-semibold rounded shadow"
+          class="bg-main-color learn-button hover:bg-main-color-700 text-gray-100 px-5 py-3 mr-3 font-semibold rounded shadow"
           v-if="header.btn1"
           :to="header.link1"
           >{{ header.btn1 }}</g-link

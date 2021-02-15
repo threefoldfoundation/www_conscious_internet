@@ -9,7 +9,7 @@
       <div class="w-full lg:w-2/6 px-4 text-center">
         <g-link
           v-if="signup.button1"
-          class="main-color learn-button hover:main-color-700 text-gray-100 px-5 py-3 mr-3 font-semibold rounded shadow"
+          class="bg-main-color learn-button hover:bg-main-color-700 text-gray-100 px-5 py-3 mr-3 font-semibold rounded shadow"
           :to="signup.link1"
           >{{ signup.button1 }}</g-link
         ><g-link
