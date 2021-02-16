@@ -1,8 +1,7 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
     <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
-
-    <!--  <Header
+      <!--  <Header
         v-if="
           $page.markdownPage.id !== 'contact' &&
           $page.markdownPage.header_title &&
@@ -54,7 +53,6 @@
         :main="$page.markdownPage.pricing_plansMain"
         :pricingPlans="$page.markdownPage.pricingPlans"
       /> -->
-
 
       <!-- <Features
         v-if="$page.markdownPage.features3.length > 0"
@@ -193,6 +191,9 @@
           link
           order
           content
+          company
+          websites
+          location
         }
         cards3{
           id
@@ -412,7 +413,6 @@ export default {
     SplitWithImage,
     FourTiersWithToggle,
     WithComparisonTable,
-
   },
   metaInfo() {
     return {

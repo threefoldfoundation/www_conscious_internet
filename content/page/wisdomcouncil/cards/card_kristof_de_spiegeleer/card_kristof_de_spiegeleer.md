@@ -6,7 +6,12 @@ button:
 link:
 order: 1
 company: ThreeFold, Incubaid
-website: https://www.threefold.io, https://www.incubaid.com/, https://www.freeflownation.org/
+websites:
+  [
+    https://threefold.io,
+    https://incubaid.com,
+    https://freeflownation.org,
+  ]
 location: Ghent, Belgium; Ibiza, Spain; El Gouna, Egypt
 linkedin: https://www.linkedin.com/in/despiegk/
 ---

@@ -2,11 +2,11 @@
 id: card_dimitrios_dermentzioglou
 title: DIMITRIOS DERMENTZIOGLOU
 image: ./dimitrios_dermentzioglou.jpg
-button: MESSAGE FROM ADNAN
+button: MESSAGE FROM DIMITRIOS
 link: https://player.vimeo.com/video/413150039
 order: 1
 company: The Music Medicine, ThreeFold
-website: http://themusicmedicine.com/
+websites: [http://themusicmedicine.com]
 location: Istanbul, Turkey; Brasil; Greece; The World;
 linkedin:
 ---

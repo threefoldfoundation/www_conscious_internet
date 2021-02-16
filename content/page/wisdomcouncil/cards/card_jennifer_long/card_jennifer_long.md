@@ -6,7 +6,7 @@ button: MESSAGE FROM JENNIFER
 link: https://player.vimeo.com/video/416720160
 order: 1
 company: BiolleyFarms
-website: http://www.biolleyfarms.com/
+websites: [http://biolleyfarms.com]
 location: Buenos Aires, Costa Rica
 linkedin: https://www.linkedin.com/in/jenniferlongcr/
 ---

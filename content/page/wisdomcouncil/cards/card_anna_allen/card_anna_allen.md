@@ -6,7 +6,7 @@ button: MESSAGE FROM ANNA
 link: https://player.vimeo.com/video/413651273
 order: 1
 company: Anna Naturalista
-website: https://www.annanaturalista.com/
+websites: [https://annanaturalista.com]
 location: Damanhur, Italy
 linkedin: https://www.linkedin.com/in/annanaturalista/
 ---

@@ -6,7 +6,7 @@ button: MESSAGE FROM ADNAN
 link: https://player.vimeo.com/video/413151305
 order: 1
 company: ThreeFold Foundation, Mazraa
-website: https://threefold.io/, https://www.mazraa.io/
+websites: [https://threefold.io, https://mazraa.io]
 location: Dubai, UAE; Ibiza, Spain
 linkedin: https://www.linkedin.com/in/adnansf/
 ---

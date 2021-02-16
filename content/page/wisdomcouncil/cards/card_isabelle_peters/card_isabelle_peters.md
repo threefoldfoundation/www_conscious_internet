@@ -3,10 +3,10 @@ id: card_isabelle_peters
 title: ISABELLE PETERS
 image: ./isabelle_peters.png
 button:
-link:  
+link:
 order: 1
 company: Veda Retreats
-website: veda-egypt.com
+websites: [https://veda-egypt.com]
 location: Ibiza, Spain; El Ghouna, Egypt; Ghent, Belgium
 ---
 

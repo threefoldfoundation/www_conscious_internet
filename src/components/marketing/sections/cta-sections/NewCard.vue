@@ -25,6 +25,42 @@
               >{{ card.button }}</a
             >
           </div>
+          <ul class="mt-10">
+            <li v-if="card.company" class="mb-2">
+              <font-awesome
+                class="mr-2 text-gray-700"
+                :icon="['fas', 'briefcase']"
+              />
+              <span class="text-main-color">
+                {{ card.company }}
+              </span>
+            </li>
+            <li v-if="card.websites.length > 0" class="mb-2">
+              <font-awesome
+                class="mr-2 text-gray-700"
+                :icon="['fas', 'external-link-alt']"
+              />
+              <a
+                v-for="(website, index) in card.websites"
+                :key="index"
+                class="links text-main-color"
+                :href="website"
+                target="_blank"
+              >
+                {{ website.replace(/(^\w+:|^)\/\//, "") }}
+              </a>
+            </li>
+
+            <li v-if="card.location" class="mb-2">
+              <font-awesome
+                class="mr-2 text-gray-700"
+                :icon="['fas', 'map-marker-alt']"
+              />
+              <span class="text-main-color">
+                {{ card.location }}
+              </span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -33,20 +69,31 @@
 
 <script>
 export default {
+  props: ["card"],
   computed: {
-    img: function () {
+    img() {
       if (this.card.image.src)
         return "background-image:url(" + this.card.image.src + ")";
       return this.card.image;
     },
   },
-
-  props: ["card"],
 };
 </script>
 
 <style scoped>
 .newCard {
   min-height: 540px;
+}
+
+ul {
+  list-style: none;
+}
+
+.links::after {
+  content: ",";
+}
+
+.links:last-child::after {
+  content: "";
 }
 </style>
