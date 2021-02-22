@@ -3,7 +3,7 @@ id: card_michael_wellesley_wesley
 title: MICHAEL WELLESLEY-WESLEY
 image: ./michael_wellesley_wesley.jpeg
 button: MESSAGE FROM MICHAEL
-link: https://vimeo.com/413148180
+link: https://player.vimeo.com/video/413148180
 order: 1
 company: Green Edge; Inogesis; Helmsdale
 websites: [https://green-edge.net, https://inogesis.com]

@@ -3,7 +3,7 @@ id: card_rishi_chidananda
 title: RISHI CHIDANANDA
 image: ./rishi_chidananda.jpeg
 button: MESSAGE FROM RISHI
-link: https://vimeo.com/413143125
+link: https://player.vimeo.com/video/413143125
 order: 1
 company: Just Love Collective
 websites: [https://justlovecollective.shop]

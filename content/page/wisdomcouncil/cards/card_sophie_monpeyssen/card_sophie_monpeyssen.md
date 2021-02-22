@@ -3,7 +3,7 @@ id: card_sophie_monpeyssen
 title: SOPHIE MONPEYSSEN
 image: ./sophie_monpeyssen.jpeg
 button: MESSAGE FROM SOPHIE
-link: https://vimeo.com/414707207
+link: https://player.vimeo.com/video/414707207
 order: 1
 company:
 websites: []
