@@ -38,7 +38,7 @@
 
 <page-query>
 query($page: Int){
-  entries: allProject (perPage: 10, page: $page, sortBy: "rank", order: DESC, filter: { tags: { id: {in: ["farming", "cloud", "grid", "digitaltwin"]}}})@paginate{
+  entries: allProject (perPage: 10, page: $page, sortBy: "rank", order: DESC, filter: { tags: { id: {in: ["aci"]}}})@paginate{
     totalCount
     pageInfo {
       totalPages

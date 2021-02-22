@@ -263,7 +263,7 @@ export default {
       if (!this.$el.contains(e.target)) {
         this.open = false;
         this.active = !this.active;
-        this.isOpen = !this.isOpen;
+        this.isOpen = false;
       }
     },
     clicked() {
