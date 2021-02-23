@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-    siteName: 'Alliance for a Conscious Internet',
+    siteName: 'ACI',
     plugins: [
 
         // Local models
