@@ -1,10 +1,7 @@
 ---
 id: sec3
-title: ''
+title: NO MANIPULATION
 ---
 
-We aim to empower 1+ Billion people with access to the internet allowing everyone a chance to exchange value, goods and information for less than $1 per month. 
-<br>
-Independent of location, race, gender, religion, we leave n one behing so that everyone can deliver services and goods to everyone in all transparency and fairness. 
-<br>
-Instead of competing, we collaborate with one another to improve our solutions, efficiency, reach, visibility and our service to the planet and humanity
+Every digital citizen must have sole ownership of their created information and content. An author’s identity should always be verifiable unless an author wants to be anonymous. Everyone must have absolute freedom to decide what they want to
+share, and with whom they want to share it.

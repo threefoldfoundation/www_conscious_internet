@@ -1,5 +1,5 @@
 ---
-id: participate_main
+id: home_about
 title: ''
 image: ./hand.png
 ---

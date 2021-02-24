@@ -2,7 +2,6 @@
 id: about
 title: ''
 header: about_header
-solution_image: ./header.png
 howItWorksMain: rights
 howItWorks: [sec1, sec2, sec3]
 slides:

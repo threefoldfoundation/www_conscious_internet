@@ -1,10 +1,6 @@
 ---
 id: sec2
-title: ''
+title: SAFE & HEALTHY ENVIRONMENT
 ---
 
-We aim to empower 1+ Billion people with access to the internet allowing everyone a chance to exchange value, goods and information for less than $1 per month. 
-<br>
-Independent of location, race, gender, religion, we leave n one behing so that everyone can deliver services and goods to everyone in all transparency and fairness. 
-<br>
-Instead of competing, we collaborate with one another to improve our solutions, efficiency, reach, visibility and our service to the planet and humanity
+Health and safety are human rights. Everyone deserves equal access to affordable education, healthcare, financial systems, and Internet across geographical and cultural borders. The power lies in collaboration. It is our responsibility to produce high quality and sustainable products and services.

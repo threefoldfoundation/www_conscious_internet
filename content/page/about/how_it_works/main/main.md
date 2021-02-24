@@ -1,4 +1,4 @@
 ---
 id: rights
 title: ''
-image: ./hand.png
+image: ./about.png

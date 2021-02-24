@@ -25,10 +25,10 @@
         :header="$page.markdownPage.headerSolution"
       />
 
-      <g-image
+      <!-- <g-image
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
-      />
+      /> -->
 
       <SolutionsHeader
         v-if="$page.markdownPage.headerSolution2"
@@ -99,7 +99,7 @@
      #  header_image
      #  button
      #  link
-        solution_image
+     #  solution_image
         slides{
           id
           title
