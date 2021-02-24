@@ -60,11 +60,11 @@
         :features="$page.markdownPage.features3"
       /> -->
 
-      <!-- <HowItWorks
+      <HowItWorks
         v-if="$page.markdownPage.howItWorks.length > 0"
         :HIWData="$page.markdownPage.howItWorks"
         :main="$page.markdownPage.howItWorksMain"
-      /> -->
+      />
 
       <!-- <GetInTouch
         :contacts="$page.markdownPage.contactData"
