@@ -41,16 +41,25 @@
         :card="card"
       />
 
-      <HowItWorks
-        v-if="$page.markdownPage.howItWorks.length > 0"
-        :HIWData="$page.markdownPage.howItWorks"
-        :main="$page.markdownPage.howItWorksMain"
+      <Comparison
+        v-if="
+          $page.markdownPage.comparisonSecs &&
+          $page.markdownPage.comparisonSecs.length > 0
+        "
+        :main="$page.markdownPage.comparisonMain"
+        :sections="$page.markdownPage.comparisonSecs"
       />
       
       <VerticalNav
         :slides="$page.markdownPage.slides"
         v-if="$page.markdownPage.slide && $page.markdownPage.slides.length > 0"
       />
+
+      <!-- <HowItWorks
+        v-if="$page.markdownPage.howItWorks.length > 0"
+        :HIWData="$page.markdownPage.howItWorks"
+        :main="$page.markdownPage.howItWorksMain"
+      /> -->
 
       <!-- <Features
         v-if="$page.markdownPage.features.length > 0"
@@ -136,6 +145,19 @@
         subtitle
         content
        }
+      comparisonMain{
+          id
+          title
+          description
+          button
+          link
+        }
+        comparisonSecs{
+          id
+          svg
+          title
+          content
+        }
        howItWorksMain{
          id
          title
@@ -188,6 +210,7 @@ import NewCard from "~/components/marketing/sections/cta-sections/NewCard.vue";
 import Header from "~/components/marketing/sections/cta-sections/Header.vue";
 import VerticalNav from "~/components/custom/Navbar/VerticalNav.vue";
 import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.vue";
+import Comparison from "~/components/custom/sections/Comparison.vue";
 import HowItWorks from "~/components/custom/sections/HowItWorks.vue";
 import Features from "~/components/custom/sections/Features.vue";
 import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
@@ -198,6 +221,7 @@ import WisdomCouncilMemebersGrid from "~/components/marketing/sections/logo-clou
 export default {
   components: {
     NewCard,
+    Comparison,
     Header,
     VerticalNav,
     SolutionsHeader,

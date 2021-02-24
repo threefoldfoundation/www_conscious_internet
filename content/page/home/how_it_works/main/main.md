@@ -1,5 +1,5 @@
 ---
-id: home_about
+id: home_howitworks
 title: ''
 image: ./hand.png
 ---

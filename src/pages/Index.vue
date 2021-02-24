@@ -51,7 +51,10 @@
       v-if="$page.markdownPage.signup"
     /> -->
 
-    <CallToAction v-if="$page.markdownPage.cta" :cta="$page.markdownPage.cta" />
+    <CallToAction 
+      v-if="$page.markdownPage.cta" 
+      :cta="$page.markdownPage.cta" 
+    />
   </Layout>
 </template>
 

@@ -2,8 +2,8 @@
 id: about
 title: ''
 header: about_header
-howItWorksMain: rights
-howItWorks: [sec1, sec2, sec3]
+comparisonMain: rights
+comparisonSecs: [sec1, sec2, sec3]
 slides:
   [
     power,
