@@ -157,10 +157,10 @@ export default {
     CallToAction,
     InTheNews,
   },
-  metaInfo() {
-    return {
-      title: this.$page.markdownPage.title,
-    };
+  metaInfo: {
+    title: "",
+    titleTemplate: "ACI",
+ 
   },
 };
 </script>
