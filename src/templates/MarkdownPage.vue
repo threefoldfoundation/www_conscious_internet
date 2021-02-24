@@ -41,6 +41,11 @@
         :HIWData="$page.markdownPage.howItWorks"
         :main="$page.markdownPage.howItWorksMain"
       />
+      
+      <VerticalNav
+        :slides="$page.markdownPage.slides"
+        v-if="$page.markdownPage.slide && $page.markdownPage.slides.length > 0"
+      />
 
       <!-- <ShowcaseProducts
         :products="$page.markdownPage.productData"
@@ -60,11 +65,6 @@
         v-if="$page.markdownPage.howItWorks.length > 0"
         :HIWData="$page.markdownPage.howItWorks"
         :main="$page.markdownPage.howItWorksMain"
-      /> -->
-
-      <!-- <VerticalNav
-        :slides="$page.markdownPage.slides"
-        v-if="$page.markdownPage.slide && $page.markdownPage.slides.length > 0"
       /> -->
 
       <!-- <SolutionsHeader
@@ -158,24 +158,15 @@
         subtitle
         content
        }
-       howItWorks{
-         id
-         title
-         content
-       }
-       brandPanel{
-         id
-         title
-         subtitle
-         content
-         sourceUrl
-         btnTxt
-         image
-       }
        howItWorksMain{
          id
          title
          image
+       }
+        howItWorks{
+         id
+         title
+         content
        }
        productData{
         id
@@ -237,7 +228,6 @@
 import NewCard from "~/components/marketing/sections/cta-sections/NewCard.vue";
 import Header from "~/components/marketing/sections/cta-sections/Header.vue";
 import VerticalNav from "~/components/custom/Navbar/VerticalNav.vue";
-import GetInTouch from "~/components/custom/Navbar/Getintouch.vue";
 import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.vue";
 import HowItWorks from "~/components/custom/sections/HowItWorks.vue";
 import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
@@ -246,10 +236,6 @@ import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowc
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
 import SignUp from "~/components/custom/sections/SignUp.vue";
 import Comparison from "~/components/custom/sections/Comparison.vue";
-import BrandPanel from "~/components/marketing/sections/cta-sections/BrandPanel.vue";
-import SplitWithImage from "~/components/marketing/sections/cta-sections/SplitWithImage.vue";
-import FourTiersWithToggle from "~/components/marketing/sections/pricing/four_tiers_with_toggle.vue";
-import WithComparisonTable from "~/components/marketing/sections/pricing/with_comparison_table.vue";
 import WisdomCouncilMemebersGrid from "~/components/marketing/sections/logo-clouds/off_white_grid.vue";
 
 export default {
@@ -257,7 +243,6 @@ export default {
     NewCard,
     Header,
     VerticalNav,
-    GetInTouch,
     SolutionsHeader,
     HowItWorks,
     ShowcaseProducts,
@@ -266,10 +251,6 @@ export default {
     CallToAction,
     SignUp,
     Comparison,
-    BrandPanel,
-    SplitWithImage,
-    FourTiersWithToggle,
-    WithComparisonTable,
   },
   metaInfo() {
     return {
