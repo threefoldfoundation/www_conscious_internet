@@ -10,11 +10,11 @@
         v-for="(section, index) in sections"
         :key="index"
       >
-        <g-image
+        <!-- <g-image
           class="w-1/2 mx-auto mb-8 h-32"
           :src="section.svg.src"
           :alt="section.title"
-        />
+        /> -->
         <h3 class="text-2xl mb-4 font-semibold font-heading">
           <!-- <span
             class="inline-flex items-center justify-center h-12 w-12 mr-2 border rounded-full"
