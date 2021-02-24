@@ -47,14 +47,6 @@
         v-if="$page.markdownPage.slide && $page.markdownPage.slides.length > 0"
       />
 
-      <!-- <ShowcaseProducts
-        :products="$page.markdownPage.productData"
-        v-if="
-          $page.markdownPage.productData &&
-          $page.markdownPage.productData.length > 0
-        "
-      /> -->
-
       <!-- <Features
         v-if="$page.markdownPage.features.length > 0"
         :main="$page.markdownPage.featuresMain"
@@ -72,15 +64,6 @@
         :header="$page.markdownPage.headerSolution3"
       /> -->
 
-      <!-- <Comparison
-        v-if="
-          $page.markdownPage.comparisonSecs &&
-          $page.markdownPage.comparisonSecs.length > 0
-        "
-        :main="$page.markdownPage.comparisonMain"
-        :sections="$page.markdownPage.comparisonSecs"
-      /> -->
-
       <!-- <logoShowcase
         v-if="$page.markdownPage.logos"
         :logos="$page.markdownPage.logos"
@@ -94,11 +77,6 @@
       <!-- <SignUp
         v-if="$page.markdownPage.signup"
         :signup="$page.markdownPage.signup"
-      /> -->
-
-      <!-- <BrandPanel
-        :brand="$page.markdownPage.brandPanel"
-        v-if="$page.markdownPage.brandPanel"
       /> -->
 
       <!-- <InTheNews
@@ -168,11 +146,6 @@
          title
          content
        }
-       productData{
-        id
-         title
-        content
-       }
         featuresMain{
           id
           title
@@ -205,20 +178,6 @@
           button2
           link2
         }
-        comparisonMain{
-          id
-          title
-          description
-          button
-          link
-        }
-        comparisonSecs{
-          id
-          svg
-          title
-          content
-        }
-
     }
   }
 
@@ -230,12 +189,10 @@ import Header from "~/components/marketing/sections/cta-sections/Header.vue";
 import VerticalNav from "~/components/custom/Navbar/VerticalNav.vue";
 import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.vue";
 import HowItWorks from "~/components/custom/sections/HowItWorks.vue";
-import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
 import Features from "~/components/custom/sections/Features.vue";
 import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
 import SignUp from "~/components/custom/sections/SignUp.vue";
-import Comparison from "~/components/custom/sections/Comparison.vue";
 import WisdomCouncilMemebersGrid from "~/components/marketing/sections/logo-clouds/off_white_grid.vue";
 
 export default {
@@ -245,12 +202,10 @@ export default {
     VerticalNav,
     SolutionsHeader,
     HowItWorks,
-    ShowcaseProducts,
     Features,
     logoShowcase,
     CallToAction,
     SignUp,
-    Comparison,
   },
   metaInfo() {
     return {

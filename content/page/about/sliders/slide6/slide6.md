@@ -1,7 +1,7 @@
 ---
 id: a_new_internet_for_our_planet
 title: a new internet | for our planet
-image:
+image: ''
 order: 1
 ---
 

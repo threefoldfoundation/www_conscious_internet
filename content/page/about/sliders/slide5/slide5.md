@@ -1,7 +1,7 @@
 ---
 id: digital_sovereignty_for_everyone
 title: digital sovereignty | for everyone
-image:
+image: ''
 order: 2
 ---
 

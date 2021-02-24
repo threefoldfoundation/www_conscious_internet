@@ -1,7 +1,7 @@
 ---
 id: what_we_stand_for
 title: what we stand for
-image:
+image: ''
 order: 4
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: internet_access_a_human_right
 title: internet access | a human right
-image:
+image: ''
 order: 3
 ---
 

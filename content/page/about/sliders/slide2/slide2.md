@@ -1,7 +1,7 @@
 ---
 id: if_not_us_who
 title: if not us, who? if not now, when?
-image:
+image: ''
 order: 5
 ---
 
