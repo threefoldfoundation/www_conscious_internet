@@ -1,6 +1,6 @@
 <template>
   <section class="py-12 px-4 text-center">
-    <h2 class="text-4xl mb-2 leading-tight font-semibold font-heading">
+    <h2 class="text-main-color text-4xl mt-2 mb-6 leading-tight font-heading">
       {{ main.title }}
     </h2>
     <p class="text-gray-600">{{ main.description }}</p>
