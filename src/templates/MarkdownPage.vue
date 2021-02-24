@@ -30,46 +30,17 @@
         :header="$page.markdownPage.headerSolution2"
       />
 
-      <g-image
-        v-if="$page.markdownPage.solution_image3"
-        :src="$page.markdownPage.solution_image3.src"
-      />
-
-      <!-- <NewCard
-        v-for="card in $page.markdownPage.cards3"
+      <NewCard
+        v-for="card in $page.markdownPage.cards"
         :key="card.id"
         :card="card"
-      /> -->
-
-      <!-- <WithComparisonTable
-        v-if="$page.markdownPage.plans &&
-        $page.markdownPage.plans.length > 0"
-        :plans="$page.markdownPage.plans"
-      /> -->
-
-      <!-- <FourTiersWithToggle
-        v-if="$page.markdownPage.pricingPlans &&
-        $page.markdownPage.pricingPlans.length > 0"
-        :main="$page.markdownPage.pricing_plansMain"
-        :pricingPlans="$page.markdownPage.pricingPlans"
-      /> -->
-
-      <!-- <Features
-        v-if="$page.markdownPage.features3.length > 0"
-        :main="$page.markdownPage.featuresMain3"
-        :features="$page.markdownPage.features3"
-      /> -->
+      />
 
       <HowItWorks
         v-if="$page.markdownPage.howItWorks.length > 0"
         :HIWData="$page.markdownPage.howItWorks"
         :main="$page.markdownPage.howItWorksMain"
       />
-
-      <!-- <GetInTouch
-        :contacts="$page.markdownPage.contactData"
-        v-if="$page.markdownPage.contactData.length > 0"
-      /> -->
 
       <!-- <ShowcaseProducts
         :products="$page.markdownPage.productData"
@@ -96,12 +67,6 @@
         v-if="$page.markdownPage.slide && $page.markdownPage.slides.length > 0"
       /> -->
 
-      <NewCard
-        v-for="card in $page.markdownPage.cards"
-        :key="card.id"
-        :card="card"
-      />
-
       <!-- <SolutionsHeader
         v-if="$page.markdownPage.headerSolution3"
         :header="$page.markdownPage.headerSolution3"
@@ -116,12 +81,6 @@
         :sections="$page.markdownPage.comparisonSecs"
       /> -->
 
-      <!-- <Features
-        v-if="$page.markdownPage.features2.length > 0"
-        :main="$page.markdownPage.featuresMain2"
-        :features="$page.markdownPage.features2"
-      /> -->
-
       <!-- <logoShowcase
         v-if="$page.markdownPage.logos"
         :logos="$page.markdownPage.logos"
@@ -130,11 +89,6 @@
       <!-- <CallToAction
         v-if="$page.markdownPage.cta"
         :cta="$page.markdownPage.cta"
-      /> -->
-
-      <!-- <g-image
-        v-if="$page.markdownPage.solution_image4"
-        :src="$page.markdownPage.solution_image4.src"
       /> -->
 
       <!-- <SignUp
@@ -173,9 +127,6 @@
      #  button
      #  link
         solution_image
-     #  solution_image2
-     #  solution_image3
-     #  solution_image4
         slides{
           id
           title
@@ -195,48 +146,6 @@
           websites
           location
         }
-        cards3{
-          id
-          title
-          image
-          button
-          link
-          order
-          content
-        }
-        pricing_plansMain{
-          id
-          title
-          button1
-          button2
-          excerpt
-        }
-        pricingPlans{
-          id
-          title
-          excerpt
-          price
-          duration
-          button
-          link
-          includeTitle
-          options
-        }
-        plans{
-          id
-          title
-          rows {
-            title
-            firstCol
-            secCol
-          }
-        }
-       contactData{
-         id
-         title
-         mail
-         phone
-       }
       header{
           title
           subtitle
@@ -253,18 +162,6 @@
         headerSolution2{
         subtitle
         content
-       }
-        headerSolution3{
-         subtitle
-         content
-         btn1
-         link1
-       }
-        headerSolution4{
-        subtitle
-        content
-        btn1
-        link1
        }
        howItWorks{
          id
@@ -306,41 +203,15 @@
           link
           content
         }
-        featuresMain2{
-          id
-          title
-          btn
-          link
-          content
-        }
-        featuresMain3{
-          id
-          title
-          btn
-          link
-          content
-        }
-        logos{
-          id
-          image
-        }
         features{
           id
           title
           svg
           content
         }
-        features2{
+        logos{
           id
-          title
-          svg
-          content
-        }
-        features3{
-          id
-          title
-          svg
-          content
+          image
         }
         cta{
           id

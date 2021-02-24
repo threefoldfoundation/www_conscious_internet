@@ -11,7 +11,7 @@ navLinks:
     external: false
     expandable: false
 
-  - name: WISDOM COUNCIL
+  - name: Wisdom Council
     link: /wisdomcouncil
     external: false
     expandable: false
@@ -21,4 +21,3 @@ social:
     link: https://t.me/threefoldnews
 ---
 
-<!--      -->
