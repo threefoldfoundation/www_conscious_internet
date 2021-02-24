@@ -1,11 +1,11 @@
 ---
-id: if_not_us_who
-title: if not us, who? if not now, when?
+id: respect
+title: RESPECT & ACTION
 image: ''
 order: 5
 ---
 
-While to date we have maintained more of a focal role in terms of funding, development, and promotion, for example, this has been more out of necessity than out of desire.
-
-We know that the success of the mission depends on a distributed and decentralized ecosystem all working towards the same vision.
+**I declare that RESPECT is the basis of my communication and ACTION**
+<br/>
+I declare that respect instead of fear or ego, is the basis of my communication and my action in the new digital world. I don't have to always agree but respect and tolerance for other opinions is a must. I need to respect time, e.g. time of others and my own.
 

@@ -1,16 +1,10 @@
 ---
-id: digital_sovereignty_for_everyone
-title: digital sovereignty | for everyone
+id: humanity
+title: HUMANITY
 image: ''
 order: 2
 ---
 
-The Internet evolved to become the world's largest database of information and knowledge, opening up exponential growth on personal, organizational and economic levels. Yet it is owned by large international companies that exploit users data.
+**I declare that NO one should ever be a product**
 <br />
-<br />
-
-The current approach of many governments and countries is to cut the Internet into pieces by limiting its accessibility and enforcing regulations. We need an internet that protects our digital freedom and fair access to global information for everyone, everywhere.
-<br />
-<br />
-
-The ThreeFold Grid is a peer-to-peer Internet - owned by its users. All the technology of this new Internet is open-source and the whole experience is built around the fundamentals of a peer-to-peer network. On the ThreeFold Grid, everyone owns their data and experiences - they are autonomous.
+I have become a product of a big data machine. Every action I take on social media, Internet searches, etc., is a potential profit for someone else. I will stop believing that we are getting these services for free. This leads to manipulation and too much of a consumption of our world's resources. This means I accept to pay for resources I use. This means I not only stop being a product myslef but will never make another human (or any being) into a product.
