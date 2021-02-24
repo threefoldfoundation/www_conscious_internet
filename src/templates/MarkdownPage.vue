@@ -19,6 +19,11 @@
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
       />
+
+      <g-image
+        v-if="$page.markdownPage.solution_image"
+        :src="$page.markdownPage.solution_image.src"
+      />
       
       <Comparison
         v-if="
@@ -38,11 +43,6 @@
         :slides="$page.markdownPage.slides"
         v-if="$page.markdownPage.slide && $page.markdownPage.slides.length > 0"
       />
-
-      <!-- <g-image
-        v-if="$page.markdownPage.solution_image"
-        :src="$page.markdownPage.solution_image.src"
-      /> -->
 
       <SolutionsHeader
         v-if="$page.markdownPage.headerSolution2"
@@ -108,7 +108,7 @@
      #  header_image
      #  button
      #  link
-     #  solution_image
+        solution_image
         slides{
           id
           title
