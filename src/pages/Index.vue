@@ -20,13 +20,9 @@
         :header="$page.markdownPage.header"
       /> -->
 
-      <!-- <ShowcaseProducts
-        :main="$page.markdownPage.productsMain"
-        :products="$page.markdownPage.productData"
-        v-if="
-          $page.markdownPage.productData &&
-          $page.markdownPage.productData.length > 0
-        "
+      <!-- <SolutionsHeader
+        v-if="$page.markdownPage.headerSolution"
+        :header="$page.markdownPage.headerSolution"
       /> -->
 
       <!-- <Features
@@ -34,27 +30,11 @@
         :features="$page.markdownPage.features"
       /> -->
 
-      <SolutionsHeader
-        v-if="$page.markdownPage.headerSolution"
-        :header="$page.markdownPage.headerSolution"
-      />
-
-      <g-image
-        v-if="$page.markdownPage.solution_image_2"
-        :src="$page.markdownPage.solution_image_2.src"
-      />
-
-      <!-- <NewCard
-        v-for="card in $page.markdownPage.cards"
-        :key="card.id"
-        :card="card"
-      /> -->
-    </div>
-
-    <!-- <Features
-      :main="$page.markdownPage.featuresMain2"
-      :features="$page.markdownPage.features2"
+    <!-- <g-image
+      v-if="$page.markdownPage.solution_image"
+      :src="$page.markdownPage.solution_image.src"
     /> -->
+    </div>
 
     <!-- <logoShowcase
       v-if="$page.markdownPage.logos.length > 0"
@@ -72,14 +52,6 @@
     /> -->
 
     <CallToAction v-if="$page.markdownPage.cta" :cta="$page.markdownPage.cta" />
-    
-
-    <g-image
-      v-if="$page.markdownPage.solution_image"
-      :src="$page.markdownPage.solution_image.src"
-    />
-
-    <!-- <Getintouch :contacts="contacts"/> -->
   </Layout>
 </template>
 
@@ -95,16 +67,6 @@
         button
         link
       # solution_image
-      # solution_image_2
-        cards{
-          id
-          title
-          image
-          button
-          link
-          order
-          content
-        }
         header{
          title
          subtitle
@@ -125,11 +87,10 @@
           link
           content
         }
-        featuresMain2{
+        features{
           id
           title
-          btn
-          link
+          svg
           content
         }
         logos{
@@ -137,30 +98,6 @@
           image
           url
         }
-        features{
-          id
-          title
-          svg
-          content
-        }
-        features2{
-          id
-          title
-          svg
-          content
-        }
-        productsMain{
-          id
-          title
-          subtitle
-          image
-        }
-        productData{
-         id
-         title
-         excerpt
-         image
-       }
         signup{
           id
           title
@@ -203,13 +140,10 @@
 import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.vue";
 import Header from "~/components/marketing/sections/cta-sections/Header.vue";
 import Features from "~/components/custom/sections/Features.vue";
-import NewCard from "~/components/marketing/sections/cta-sections/NewCard.vue";
-import Getintouch from "~/components/custom/Navbar/Getintouch.vue";
 import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
 import SignUp from "~/components/custom/sections/SignUp.vue";
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
 import InTheNews from "~/components/marketing/sections/logo-clouds/off_white_grid.vue";
-import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
 import HowItWorks from "~/components/custom/sections/HowItWorks.vue";
 
 export default {
@@ -218,13 +152,10 @@ export default {
     HowItWorks,
     Header,
     Features,
-    NewCard,
-    Getintouch,
     logoShowcase,
     SignUp,
     CallToAction,
     InTheNews,
-    ShowcaseProducts,
   },
   metaInfo() {
     return {
