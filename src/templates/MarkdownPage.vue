@@ -101,11 +101,6 @@
         v-if="$page.markdownPage.brandPanel"
       /> -->
 
-      <!-- <SplitWithImage
-      :split="$page.markdownPage.splitWithImage"
-        v-if="$page.markdownPage.splitWithImage"
-      /> -->
-
       <!-- <InTheNews
         v-if="$page.markdownPage.inTheNews"
         :news="$page.markdownPage.inTheNews"
@@ -172,15 +167,6 @@
          id
          title
          subtitle
-         content
-         sourceUrl
-         btnTxt
-         image
-       }
-       splitWithImage{
-         id
-         subtitle
-         title
          content
          sourceUrl
          btnTxt
