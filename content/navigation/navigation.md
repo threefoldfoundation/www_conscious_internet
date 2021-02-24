@@ -1,6 +1,11 @@
 ---
 id: navigation
 navLinks:
+  - name: About
+    link: /about
+    external: false
+    expandable: false
+
   - name: Projects
     link: /partners
     external: false
