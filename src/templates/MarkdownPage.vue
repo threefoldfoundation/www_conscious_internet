@@ -19,10 +19,24 @@
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
       />
+      
+      <Comparison
+        v-if="
+          $page.markdownPage.comparisonSecs &&
+          $page.markdownPage.comparisonSecs.length > 0
+        "
+        :main="$page.markdownPage.comparisonMain"
+        :sections="$page.markdownPage.comparisonSecs"
+      />
 
       <SolutionsHeader
         v-if="$page.markdownPage.headerSolution"
         :header="$page.markdownPage.headerSolution"
+      />
+      
+      <VerticalNav
+        :slides="$page.markdownPage.slides"
+        v-if="$page.markdownPage.slide && $page.markdownPage.slides.length > 0"
       />
 
       <!-- <g-image
@@ -39,20 +53,6 @@
         v-for="card in $page.markdownPage.cards"
         :key="card.id"
         :card="card"
-      />
-
-      <Comparison
-        v-if="
-          $page.markdownPage.comparisonSecs &&
-          $page.markdownPage.comparisonSecs.length > 0
-        "
-        :main="$page.markdownPage.comparisonMain"
-        :sections="$page.markdownPage.comparisonSecs"
-      />
-      
-      <VerticalNav
-        :slides="$page.markdownPage.slides"
-        v-if="$page.markdownPage.slide && $page.markdownPage.slides.length > 0"
       />
 
       <!-- <HowItWorks
