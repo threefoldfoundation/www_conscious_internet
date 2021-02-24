@@ -1,6 +1,10 @@
 ---
-id: participate_sec2
-title: Performance meets Price
+id: sec2
+title: ''
 ---
 
-The team has designed this node with an eye on performance while ensuring an affordable entry point for all. The specs include: AMD Ryzen 5 3400G, 32 GB RAM, 480 GB SSD, and 1 TB HDD.
+We aim to empower 1+ Billion people with access to the internet allowing everyone a chance to exchange value, goods and information for less than $1 per month. 
+<br>
+Independent of location, race, gender, religion, we leave n one behing so that everyone can deliver services and goods to everyone in all transparency and fairness. 
+<br>
+Instead of competing, we collaborate with one another to improve our solutions, efficiency, reach, visibility and our service to the planet and humanity

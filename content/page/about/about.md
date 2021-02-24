@@ -1,10 +1,10 @@
 ---
 id: about
 title: ''
-header: participate_header
+header: about_header
 solution_image: ./header.png
-howItWorksMain: participate_main
-howItWorks: [participate_sec1, participate_sec2, participate_sec3]
+howItWorksMain: rights
+howItWorks: [sec1, sec2, sec3]
 slides:
   [
     our_philosophy,

@@ -14,6 +14,11 @@
         :button="$page.markdownPage.button"
         :link="$page.markdownPage.link"
       /> -->
+      
+      <SolutionsHeader
+        v-if="$page.markdownPage.header"
+        :header="$page.markdownPage.header"
+      />
 
       <SolutionsHeader
         v-if="$page.markdownPage.headerSolution"
@@ -57,11 +62,6 @@
         v-if="$page.markdownPage.howItWorks.length > 0"
         :HIWData="$page.markdownPage.howItWorks"
         :main="$page.markdownPage.howItWorksMain"
-      /> -->
-
-      <!-- <SolutionsHeader
-        v-if="$page.markdownPage.headerSolution3"
-        :header="$page.markdownPage.headerSolution3"
       /> -->
 
       <!-- <logoShowcase

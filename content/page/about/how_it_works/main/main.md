@@ -1,4 +1,4 @@
 ---
-id: participate_main
+id: rights
 title: ''
-image: ./Hand_CI.png
+image: ./hand.png
