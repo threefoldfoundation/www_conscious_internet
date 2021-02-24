@@ -1,5 +1,6 @@
 ---
 id: wisdomcouncil
+title: ''
 headerSolution: header_wisdom
 solution_image: ./wisdom_council.png
 headerSolution2: header_wisdom_2

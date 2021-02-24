@@ -1,5 +1,6 @@
 ---
 id: about
+title: ''
 header: participate_header
 solution_image: ./header.png
 howItWorksMain: participate_main
