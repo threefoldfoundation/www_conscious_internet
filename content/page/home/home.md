@@ -6,6 +6,6 @@ header_excerpt: A planetary movement of people and organisations that take actio
 button: ''
 link: ''
 howItWorksMain: home_howitworks
-howItWorks: [sec_1, sec_2, sec_3]
+howItWorks: [sec1, sec2, sec3]
 cta: home_cta
 ---
