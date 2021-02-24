@@ -14,5 +14,5 @@ slides:
     honesty,
     humanity,
   ]
+cta: about_cta
 ---
-

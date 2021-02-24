@@ -78,10 +78,10 @@
         :logos="$page.markdownPage.logos"
       /> -->
 
-      <!-- <CallToAction
+      <CallToAction
         v-if="$page.markdownPage.cta"
         :cta="$page.markdownPage.cta"
-      /> -->
+      />
 
       <!-- <SignUp
         v-if="$page.markdownPage.signup"
