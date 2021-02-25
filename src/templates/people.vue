@@ -12,15 +12,34 @@
           :key="person.id"
           :record="person.node"
         />
+        <div class="text-center" v-if="$page.entries.edges.length == 0">
+          <h2 class="inlibe-flex mx-auto text-gray-700 w-3/4">No results</h2>
+        </div>
       </div>
+    </div>
+    <div class="pagination flex justify-center mb-8">
+      <Pagination
+        v-if="
+          $page.entries.pageInfo.totalPages > 1 &&
+          $page.entries.edges.length > 0
+        "
+        :baseUrl="baseurl"
+        :currentPage="$page.entries.pageInfo.currentPage"
+        :totalPages="$page.entries.pageInfo.totalPages"
+        :maxVisibleButtons="5"
+      />
     </div>
   </Layout>
 </template>
 
 <page-query>
-query ($private: Int){
-  entries: allPerson (sortBy: "rank", order: DESC, filter: { private: { ne: $private }, memberships: { id: {in: ["foundation", "tech", "aci"]}}}){
+query($page: Int){
+  entries: allPerson (perPage: 10, page: $page,sortBy: "rank", order: DESC, filter: { memberships: { id: {in: ["foundation", "tech", "aci"]}}})  @paginate{
     totalCount
+    pageInfo {
+      totalPages
+      currentPage
+    }
     edges {
       node {
         path
@@ -54,11 +73,13 @@ query ($private: Int){
 <script>
 import PostListItem from "~/components/custom/Cards/PostListItem.vue";
 import TagFilterHeader from "~/components/custom/TagFilterHeader.vue";
+import Pagination from "~/components/custom/Pagination.vue";
 
 export default {
   components: {
     PostListItem,
     TagFilterHeader,
+    Pagination,
   },
   metaInfo() {
     return {
@@ -77,6 +98,9 @@ export default {
       let path = this.$route.path.substring(1);
       let name = path[0].toUpperCase() + path.slice(1);
       return name;
+    },
+    baseurl() {
+      return "/people/";
     },
   },
 };
