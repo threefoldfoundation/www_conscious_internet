@@ -54,16 +54,16 @@
               :class="{
                 'px-2 mr-2': index != Object.keys(navigation.navLinks).length,
               }"
-            >
+            > 
               <span class="telegram_icon">
                 <a
                   :href="element.link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <font-awesome :icon="['fab', element.icon]" />
+                <font-awesome :icon="['fab', element.icon]" />
                 </a>
-              </span>
+              </span> 
             </li>
           </ul>
         </div>
@@ -196,11 +196,11 @@
               'mr-6': index != Object.keys(navigation.social).length - 1,
             }"
           >
-            <span class="telegram_icon">
+            <!-- <span class="telegram_icon">
               <a :href="element.link" target="_blank" rel="noopener noreferrer">
                 <font-awesome :icon="['fab', element.icon]" />
               </a>
-            </span>
+            </span> -->
           </li>
         </ul>
       </div>
