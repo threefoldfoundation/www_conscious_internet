@@ -12,7 +12,7 @@ navLinks:
     expandable: false
 
   - name: People
-    link: /team
+    link: /people
     external: false
     expandable: false
 
