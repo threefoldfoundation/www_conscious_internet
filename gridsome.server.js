@@ -174,8 +174,8 @@ module.exports = function(api) {
 
     api.createPages(({ createPage }) => {
         createPage({
-            path: '/partners',
-            component: './src/templates/Partners.vue',
+            path: '/projects',
+            component: './src/templates/projects.vue',
             context: {
                 private: private
             }

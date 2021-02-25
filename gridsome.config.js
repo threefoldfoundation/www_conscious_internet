@@ -420,7 +420,7 @@ module.exports = {
         }],
 
         ProjectTag: [{
-            path: '/partners/tags/:id',
+            path: '/projects/tags/:id',
             component: '~/templates/Tag.vue'
         }],
 
@@ -449,7 +449,7 @@ module.exports = {
         }],
 
         Project: [{
-            path: '/partners/:id',
+            path: '/projects/:id',
             component: '~/templates/Project.vue'
         }],
     },

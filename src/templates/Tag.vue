@@ -182,7 +182,7 @@ export default {
       var path = "";
       var tags = null;
       if (this.$page.projectTag) {
-        path = "/partners";
+        path = "/projects";
         tags = this.$page.allProjectTag;
       } else if (this.$page.newsTag) {
         path = "/news";

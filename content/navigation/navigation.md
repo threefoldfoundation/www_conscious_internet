@@ -7,7 +7,7 @@ navLinks:
     expandable: false
 
   - name: Projects
-    link: /partners
+    link: /projects
     external: false
     expandable: false
 

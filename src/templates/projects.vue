@@ -13,7 +13,7 @@
           v-for="partner in $page.entries.edges"
           :key="partner.id"
           :record="partner.node"
-          pathPrefix="/partners"
+          pathPrefix="/projects"
         />
       </div>
       <div class="text-center" v-if="$page.entries.edges.length == 0">
@@ -111,7 +111,7 @@ export default {
   },
   computed: {
     tags() {
-      var res = [{ title: "All", path: "/partners" }];
+      var res = [{ title: "All", path: "/projects" }];
       this.$page.tags.edges.forEach((edge) =>
         res.push({ title: edge.node.title, path: edge.node.path })
       );
@@ -123,7 +123,7 @@ export default {
       return name;
     },
     baseurl() {
-      return "/partners/";
+      return "/projects/";
     },
   },
 };
