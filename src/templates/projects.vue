@@ -38,7 +38,7 @@
 
 <page-query>
 query($page: Int){
-  entries: allProject (perPage: 10, page: $page, sortBy: "rank", order: DESC, filter: { tags: { id: {in: ["aci"]}}})@paginate{
+  entries: allProject (perPage: 10, page: $page, sortBy: "rank", order: DESC, filter: { tags: { id: {in: ["aci", "foundation", "tech"]}}})@paginate{
     totalCount
     pageInfo {
       totalPages
@@ -70,7 +70,7 @@ query($page: Int){
     }
   }
   
-  tags: allProjectTag{
+  tags: allProjectTag(filter: { title: {in: ["aci", "foundation", "tech"]}}){
      edges{
       node{
         id
@@ -94,7 +94,7 @@ export default {
     TagFilterHeader,
     Pagination,
   },
-    metaInfo() {
+  metaInfo() {
     return {
       title: this.pageName,
     };
@@ -117,7 +117,7 @@ export default {
       );
       return res;
     },
-        pageName() {
+    pageName() {
       let path = this.$route.path.substring(1);
       let name = path[0].toUpperCase() + path.slice(1);
       return name;

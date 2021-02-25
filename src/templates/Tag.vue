@@ -30,11 +30,11 @@
 
       <div class="pagination flex justify-center mb-8">
         <Pagination
-          :baseUrl="tags.path"
-          :currentPage="tags.belongsTo.pageInfo.currentPage"
-          :totalPages="tags.belongsTo.pageInfo.totalPages"
+          :baseUrl="$page.projectTag.path"
+          :currentPage="$page.projectTag.belongsTo.pageInfo.currentPage"
+          :totalPages="$page.projectTag.belongsTo.pageInfo.totalPages"
           :maxVisibleButtons="5"
-          v-if="tags.belongsTo.pageInfo.totalPages > 1"
+          v-if="$page.projectTag.belongsTo.pageInfo.totalPages > 1"
         />
       </div>
     </div>
@@ -42,11 +42,11 @@
 </template>
 
 <page-query>
-  query($id: ID!) {
+  query($id: ID!, $page: Int) {
     projectTag(id: $id) {
       title
       path
-      belongsTo{
+      belongsTo(perPage: 10, page: $page) @paginate {
         totalCount
         pageInfo {
           totalPages
@@ -129,7 +129,7 @@
       }
     }
 
-    allProjectTag(filter: { title: {in: ["aci"]}}){
+    allProjectTag(perPage: 10, page: $page,filter: { title: {in: ["aci", "foundation", "tech"]}}) @paginate{
      edges{
       node{
         id
@@ -182,6 +182,8 @@ export default {
       var path = "";
       var tags = null;
       if (this.$page.projectTag) {
+        console.log(this.$page.projectTag);
+
         path = "/projects";
         tags = this.$page.allProjectTag;
       } else if (this.$page.newsTag) {
@@ -192,7 +194,7 @@ export default {
         tags = this.$page.allBlogTag;
       }
 
-      var res = [{ title: "All Tags", path: path }];
+      var res = [{ title: "All", path: path }];
       tags.edges.forEach((edge) =>
         res.push({ title: edge.node.title, path: edge.node.path })
       );

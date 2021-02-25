@@ -27,16 +27,32 @@
         />
       </div>
     </div>
+    <div class="pagination flex justify-center mb-8">
+      <Pagination
+        v-if="
+          $page.membership.belongsTo.pageInfo.totalPages > 1 &&
+          $page.membership.belongsTo.edges.length > 0
+        "
+        :baseUrl="$page.membership.path"
+        :currentPage="$page.membership.belongsTo.pageInfo.currentPage"
+        :totalPages="$page.membership.belongsTo.pageInfo.totalPages"
+        :maxVisibleButtons="5"
+      />
+    </div>
   </Layout>
 </template>
 
 <page-query>
-  query($id: ID!) {
+  query($id: ID!, $page: Int) {
     membership(id: $id) {
       title
       path
-      belongsTo {
-        totalCount
+      belongsTo(perPage: 10, page: $page) @paginate {
+      totalCount
+      pageInfo {
+          totalPages
+          currentPage
+        }
         edges {
           node {
             ... on Person {
@@ -79,11 +95,13 @@
 <script>
 import PostListItem from "~/components/custom/Cards/PostListItem.vue";
 import TagFilterHeader from "~/components/custom/TagFilterHeader.vue";
+import Pagination from "~/components/custom/Pagination.vue";
 
 export default {
   components: {
     PostListItem,
     TagFilterHeader,
+    Pagination,
   },
 
   computed: {
@@ -95,7 +113,9 @@ export default {
       return res;
     },
   },
-
+  mounted() {
+    console.log(this.$page.membership);
+  },
   metaInfo() {
     return {
       title: this.$page.membership.title,
