@@ -34,7 +34,7 @@
 
 <page-query>
 query($page: Int){
-  entries: allPerson (perPage: 10, page: $page,sortBy: "rank", order: DESC, filter: { memberships: { id: {in: ["foundation", "tech", "aci"]}}})  @paginate{
+  entries: allPerson (perPage: 10, page: $page,sortBy: "rank", order: DESC, filter: { memberships: { id: {in: ["foundation", "aci"]}}})  @paginate{
     totalCount
     pageInfo {
       totalPages
@@ -58,7 +58,7 @@ query($page: Int){
     }
   }
 
-   memberships: allMembership(filter: {title: {in: ["foundation", "tech", "aci"]}}){
+   memberships: allMembership(filter: {title: {in: ["foundation", "aci"]}}){
      edges{
       node{
         id
