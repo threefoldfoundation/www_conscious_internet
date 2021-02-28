@@ -30,14 +30,11 @@
 
       <div class="pagination flex justify-center mb-8">
         <Pagination
-          v-if="
-            $page.projectTag.belongsTo.pageInfo.totalPages > 1 &&
-            $page.projectTag
-          "
-          :baseUrl="$page.projectTag.path"
-          :currentPage="$page.projectTag.belongsTo.pageInfo.currentPage"
-          :totalPages="$page.projectTag.belongsTo.pageInfo.totalPages"
+          :baseUrl="tags.path"
+          :currentPage="tags.belongsTo.pageInfo.currentPage"
+          :totalPages="tags.belongsTo.pageInfo.totalPages"
           :maxVisibleButtons="5"
+          v-if="tags.belongsTo.pageInfo.totalPages > 1"
         />
       </div>
     </div>
@@ -140,7 +137,7 @@
         path
       }
     }
-    }
+  }
 
     allNewsTag{
      edges{
@@ -150,7 +147,7 @@
         path
       }
     }
-    }
+  }
 
     allBlogTag{
      edges{
@@ -160,9 +157,8 @@
         path
       }
     }
-} 
-
-  }
+  } 
+}
 </page-query>
 
 <script>
