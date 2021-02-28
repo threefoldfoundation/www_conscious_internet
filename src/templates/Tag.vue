@@ -30,11 +30,14 @@
 
       <div class="pagination flex justify-center mb-8">
         <Pagination
+          v-if="
+            $page.projectTag.belongsTo.pageInfo.totalPages > 1 &&
+            $page.projectTag
+          "
           :baseUrl="$page.projectTag.path"
           :currentPage="$page.projectTag.belongsTo.pageInfo.currentPage"
           :totalPages="$page.projectTag.belongsTo.pageInfo.totalPages"
           :maxVisibleButtons="5"
-          v-if="$page.projectTag.belongsTo.pageInfo.totalPages > 1"
         />
       </div>
     </div>
@@ -182,8 +185,6 @@ export default {
       var path = "";
       var tags = null;
       if (this.$page.projectTag) {
-        console.log(this.$page.projectTag);
-
         path = "/projects";
         tags = this.$page.allProjectTag;
       } else if (this.$page.newsTag) {
