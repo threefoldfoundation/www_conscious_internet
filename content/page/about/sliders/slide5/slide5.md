@@ -14,4 +14,4 @@ I will stop believing that we are getting these services for free. This leads to
 <br/>
 This means I accept to pay for resources I use. 
 <br/>
-This means I not only stop being a product myslef but will never make another human (or any being) into a product.
+This means I not only stop being a product myself but will never make another human (or any being) into a product.
