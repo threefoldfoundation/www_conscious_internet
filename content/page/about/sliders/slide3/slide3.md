@@ -1,11 +1,11 @@
 ---
 id: recources
-title: RECOURCES
+title: RESOURCES
 image: ''
 order: 4
 ---
 
-**I declare to respect the world's finite RECOURCES**
+**I declare to respect the world's finite RESOURCES**
 <br/>
 <br/>
 I need to be respectful of finite world resources therefore I declare that I will use and produce high quality and sustainable products and services.​​​​​​​ 
