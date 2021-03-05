@@ -11,7 +11,7 @@
         <div class="inline-flex items-center flex-shrink-0">
           <a href="/" class="flex">
             <g-image
-              :src="require(`!!assets-loader!@images/ACI_LOGOTYPE.svg`)"
+              :src="require(`!!assets-loader!@images/aci_logo.svg`)"
               class="mr-3 fill-current logo"
               alt="ACI logo"
             />
