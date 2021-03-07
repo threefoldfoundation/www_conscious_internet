@@ -299,7 +299,7 @@ a.active--exact.active {
   border-radius: 0.5rem;
 }
 .logo {
-  max-width: 130px;
+  max-width: 120px;
 }
 .navbar {
   width: auto;
