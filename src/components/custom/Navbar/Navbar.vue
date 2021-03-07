@@ -1,7 +1,7 @@
 <template>
   <div class="fixed inset-0 h-16 bg-white">
     <header
-      class="flex items-center justify-between flex-wrap container mx-auto px-4 sm:px-0 transition-all transition-500"
+      class="flex items-center justify-between flex-wrap container mx-auto px-4 py-2 sm:px-0 transition-all transition-500 bg-white"
       :class="{
         'opacity-100': !disableScroll && scrollPosition > headerHeight,
         'opacity-0': !disableScroll && scrollPosition < headerHeight,
@@ -12,7 +12,7 @@
           <a href="/" class="flex">
             <g-image
               :src="require(`!!assets-loader!@images/aci_logo.svg`)"
-              class="mr-3 fill-current logo"
+              class="mr-8 fill-current logo"
               alt="ACI logo"
             />
             <!-- <span
@@ -299,7 +299,7 @@ a.active--exact.active {
   border-radius: 0.5rem;
 }
 .logo {
-  max-width: 180px;
+  max-width: 130px;
 }
 .navbar {
   width: auto;
