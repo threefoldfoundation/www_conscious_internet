@@ -1,7 +1,7 @@
 <template>
   <div class="fixed inset-0 h-16 bg-white">
     <header
-      class="flex items-center justify-between flex-wrap container mx-auto px-4 sm:px-0 transition-all transition-500"
+      class="flex items-center justify-between flex-wrap container mx-auto px-4 py-2 sm:px-0 transition-all transition-500 bg-white"
       :class="{
         'opacity-100': !disableScroll && scrollPosition > headerHeight,
         'opacity-0': !disableScroll && scrollPosition < headerHeight,
@@ -11,8 +11,8 @@
         <div class="inline-flex items-center flex-shrink-0">
           <a href="/" class="flex">
             <g-image
-              :src="require(`!!assets-loader!@images/ACI_LOGOTYPE.svg`)"
-              class="mr-3 fill-current logo"
+              :src="require(`!!assets-loader!@images/aci_logo.svg`)"
+              class="mr-8 fill-current logo"
               alt="ACI logo"
             />
             <!-- <span
@@ -132,7 +132,7 @@
                     v-else
                     class="nav-link block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark-:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     @click="open = false"
-                    :href="link.path"
+                    :href="$url(link.path)"
                     >{{ link.title }}</a
                   >
                 </div>
@@ -299,7 +299,7 @@ a.active--exact.active {
   border-radius: 0.5rem;
 }
 .logo {
-  max-width: 180px;
+  max-width: 120px;
 }
 .navbar {
   width: auto;
