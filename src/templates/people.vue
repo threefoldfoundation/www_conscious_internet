@@ -1,10 +1,10 @@
 <template>
   <Layout>
-    <!-- <TagFilterHeader
+    <TagFilterHeader
       :tags="memberships"
       selected="all"
       v-if="$page.memberships.edges.length > 1"
-    /> -->
+    />
     <div class="container sm:pxi-0 mx-auto mt-8 overflow-x-hidden">
       <div class="flex flex-wrap with-large pt-8 pb-8 mx-4 sm:-mx-4">
         <PostListItem
@@ -34,7 +34,7 @@
 
 <page-query>
 query($page: Int){
-  entries: allPerson (perPage: 10, page: $page,sortBy: "rank", order: DESC, filter: { memberships: { id: {in: ["foundation", "aci"]}}})  @paginate{
+  entries: allPerson (perPage: 10, page: $page,sortBy: "rank", order: DESC, filter: { memberships: { id: {in: ["aci_members", "wisdom_council", "grid_guardians", "technology_council"]}}})  @paginate{
     totalCount
     pageInfo {
       totalPages
@@ -58,7 +58,7 @@ query($page: Int){
     }
   }
 
-   memberships: allMembership(filter: {title: {in: ["foundation", "aci"]}}){
+   memberships: allMembership(filter: {title: {in: ["aci_members", "wisdom_council", "grid_guardians", "technology_council"]}}){
      edges{
       node{
         id
