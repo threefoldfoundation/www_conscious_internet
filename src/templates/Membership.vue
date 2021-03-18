@@ -8,12 +8,16 @@
     <div class="container sm:pxi-0 mx-auto mt-8 overflow-x-hidden">
       <div class="mx-4 sm:mx-0">
         <h1 class="pb-0 mb-0 text-5xl font-medium capitalize">
-          {{ $page.membership.title.replace('_', ' ') }}
+          {{ $page.membership.title.replace("_", " ") }}
         </h1>
         <p class="text-gray-700 text-xl">
           <span class="self-center"
             >{{ $page.membership.belongsTo.totalCount }} People</span
           >
+        </p>
+        <p v-if="readMore_link">
+          Learn more about {{ $page.membership.title.replace("_", " ") }}
+          <a :href="readMore_link" target="_blank" class="read_more"> Here </a>
         </p>
       </div>
 
@@ -112,6 +116,15 @@ export default {
       );
       return res;
     },
+    readMore_link() {
+      if (this.$page.membership.title == "grid_guardians") {
+        return "https://new.threefold.io/info/threefold#/threefold__grid_guardians";
+      } else if (this.$page.membership.title == "technology_council") {
+        return "https://new.threefold.io/info/threefold#/threefold__technology_council";
+      } else if (this.$page.membership.title == "wisdom_council") {
+        return "https://new.threefold.io/aci/wisdomcouncil";
+      }
+    },
   },
   metaInfo() {
     return {
@@ -120,3 +133,11 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.read_more {
+  color: #70cfc7;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+</style>
