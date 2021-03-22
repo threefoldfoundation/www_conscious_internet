@@ -6,8 +6,8 @@
         :image="$page.markdownPage.header_image"
         :excerpt="$page.markdownPage.header_excerpt"
         :button="$page.markdownPage.button"
-        :link="$page.markdownPage.link"
-      />
+        :link="$url($page.markdownPage.link)"
+      /> 
 
       <HowItWorks
         v-if="$page.markdownPage.howItWorks.length > 0"
