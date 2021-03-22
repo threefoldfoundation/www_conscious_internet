@@ -129,7 +129,7 @@
       }
     }
 
-    allProjectTag(perPage: 10, page: $page,filter: { title: {in: ["aci", "foundation", "tech"]}}) @paginate{
+    allProjectTag(perPage: 10, page: $page,filter: { title: {in: ["aci", "farming", "cloud", "twin"]}}) @paginate{
      edges{
       node{
         id
