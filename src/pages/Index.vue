@@ -7,7 +7,7 @@
         :excerpt="$page.markdownPage.header_excerpt"
         :button="$page.markdownPage.button"
         :link="$url($page.markdownPage.link)"
-      /> 
+      />
 
       <HowItWorks
         v-if="$page.markdownPage.howItWorks.length > 0"
@@ -30,7 +30,7 @@
         :features="$page.markdownPage.features"
       /> -->
 
-    <!-- <g-image
+      <!-- <g-image
       v-if="$page.markdownPage.solution_image"
       :src="$page.markdownPage.solution_image.src"
     /> -->
@@ -51,10 +51,7 @@
       v-if="$page.markdownPage.signup"
     /> -->
 
-    <CallToAction 
-      v-if="$page.markdownPage.cta" 
-      :cta="$page.markdownPage.cta" 
-    />
+    <CallToAction v-if="$page.markdownPage.cta" :cta="$page.markdownPage.cta" />
   </Layout>
 </template>
 
@@ -162,8 +159,14 @@ export default {
   },
   metaInfo: {
     title: "",
-    titleTemplate: "ACI",
- 
+    titleTemplate: "Alliance for a Conscious Internet | ACI",
+    meta: [
+      {
+        name: "description",
+        content:
+          "A planetary movement of people and organisations that take action now to shape a conscious digital world that empowers everyone equally, across borders.",
+      },
+    ],
   },
 };
 </script>
