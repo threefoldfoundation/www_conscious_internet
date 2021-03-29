@@ -6,7 +6,7 @@ button: MESSAGE FROM OWEN
 link: https://player.vimeo.com/video/413145439
 order: 1
 company: ThreeFold
-websites: [https://threefold.io]
+websites: [https://new.threefold.io]
 location: Vienna, Austria
 linkedin: https://www.linkedin.com/in/owen-kemp-b6b5a113/
 ---
