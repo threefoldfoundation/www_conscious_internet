@@ -118,11 +118,11 @@ export default {
     },
     readMore_link() {
       if (this.$page.membership.title == "grid_guardians") {
-        return "https://new.threefold.io/info/threefold#/threefold__grid_guardians";
+        return "https://threefold.io/info/threefold#/threefold__grid_guardians";
       } else if (this.$page.membership.title == "technology_council") {
-        return "https://new.threefold.io/info/threefold#/threefold__technology_council";
+        return "https://threefold.io/info/threefold#/threefold__technology_council";
       } else if (this.$page.membership.title == "wisdom_council") {
-        return "https://new.threefold.io/aci/wisdomcouncil";
+        return "https://threefold.io/aci/wisdomcouncil";
       }
     },
   },

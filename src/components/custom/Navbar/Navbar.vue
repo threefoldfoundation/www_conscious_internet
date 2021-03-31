@@ -140,13 +140,13 @@
             </div>
           </div>
 
-          <g-link
+          <a
             v-else-if="element.external"
-            :to="element.link"
+            :href="element.link"
             @click.native="clicked"
             target="_blank"
             class="nav-link inline-flex sm:flex uppercase p-2 mr-4 animated-link"
-            >{{ element.name }}</g-link
+            >{{ element.name }}</a
           >
           <g-link
             v-else
