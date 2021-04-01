@@ -9,7 +9,7 @@
     <div class="container sm:px-0 mx-auto overflow-x-hidden pt-12">
       <div class="mx-4 sm:mx-0">
         <h1 class="pb-0 mb-0 text-5xl font-medium capitalize">
-          {{ tags.title }}
+          {{ tags.title.replace("_", " ") }}
         </h1>
         <p class="text-gray-700 text-xl">
           <span class="self-center"
@@ -129,7 +129,7 @@
       }
     }
 
-    allProjectTag(perPage: 10, page: $page,filter: { title: {in: ["aci", "farming", "cloud", "twin"]}}) @paginate{
+    allProjectTag(perPage: 10, page: $page,filter: { title: {in: ["blockchain", "experience", "technology", "farming", "community", "infrastructure", "impact"]}}) @paginate{
      edges{
       node{
         id

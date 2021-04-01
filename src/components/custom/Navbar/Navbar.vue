@@ -54,16 +54,16 @@
               :class="{
                 'px-2 mr-2': index != Object.keys(navigation.navLinks).length,
               }"
-            > 
+            >
               <span class="telegram_icon">
                 <a
                   :href="element.link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                <font-awesome :icon="['fab', element.icon]" />
+                  <font-awesome :icon="['fab', element.icon]" />
                 </a>
-              </span> 
+              </span>
             </li>
           </ul>
         </div>
@@ -143,7 +143,7 @@
           <a
             v-else-if="element.external"
             :href="element.link"
-            @click.native="clicked"
+            @click="clicked"
             target="_blank"
             class="nav-link inline-flex sm:flex uppercase p-2 mr-4 animated-link"
             >{{ element.name }}</a
@@ -151,7 +151,7 @@
           <g-link
             v-else
             :to="element.link"
-            @click.native="clicked"
+            @click="clicked"
             class="nav-link inline-flex sm:flex uppercase p-2 mr-4 animated-link"
             >{{ element.name }}</g-link
           >
