@@ -8,7 +8,7 @@ order: 1
 company: ThreeFold, Incubaid
 websites:
   [
-    https://new.threefold.io,
+    https://threefold.io,
     https://incubaid.com,
     https://freeflownation.org,
   ]
