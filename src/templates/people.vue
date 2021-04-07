@@ -34,7 +34,7 @@
 
 <page-query>
 query($page: Int){
-  entries: allPerson (perPage: 10, page: $page,sortBy: "rank", order: DESC, filter: { memberships: { id: {in: ["cofounders", "tech", "foundation", "ambassadors", "matchmakers", "farmers", "aci_members", "partners", "wisdom_council", "technology_council", "grid_guardians"]}}})  @paginate{
+  entries: allPerson (perPage: 10, page: $page,sortBy: "rank", order: ASC, filter: { category: { contains: ["aci"]}})  @paginate{
     totalCount
     pageInfo {
       totalPages
