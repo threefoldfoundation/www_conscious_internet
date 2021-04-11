@@ -2,58 +2,32 @@
   <Layout>
     <TagFilterHeader
       :tags="tags"
-      :selected="selected"
+      selected="all"
       v-if="$page.tags.edges.length > 1"
     />
-
     <div class="container mt-8 sm:pxi-0 mx-auto overflow-x-hidden">
       <div class="flex flex-wrap with-large pt-8 pb-8 mx-4 sm:-mx-4">
         <PostListItem
-          :showtags="false"
+          :showtags="true"
           v-for="partner in $page.entries.edges"
           :key="partner.id"
           :record="partner.node"
           pathPrefix="/projects"
         />
       </div>
-      <div class="text-center" v-if="$page.entries.edges.length == 0">
-        <h2 class="inlibe-flex mx-auto text-gray-700 w-3/4">No results</h2>
-      </div>
-    </div>
-
-    <div class="pagination flex justify-center mb-8">
-      <Pagination
-        v-if="
-          $page.entries.pageInfo.totalPages > 1 &&
-          $page.entries.edges.length > 0
-        "
-        :baseUrl="baseurl"
-        :currentPage="$page.entries.pageInfo.currentPage"
-        :totalPages="$page.entries.pageInfo.totalPages"
-        :maxVisibleButtons="5"
-      />
     </div>
   </Layout>
 </template>
 
 <page-query>
-query($page: Int){
-  entries: allProject (perPage: 10, page: $page, sortBy: "rank", order: ASC, filter: { category: { contains: ["aci"]}})  @paginate{
+query ($private: Int){
+  entries: allProject (sortBy: "rank", order: ASC, filter: { private: { ne: $private }, category: { contains: ["aci"]}}){
     totalCount
-    pageInfo {
-      totalPages
-      currentPage
-    }
     edges {
       node {
         id
         title
         path
-        tags{
-          id
-          title
-          path
-        }
         members {
           id
           name
@@ -66,11 +40,16 @@ query($page: Int){
         image(width:800)
         timeToRead
         logo
+        tags{
+          id
+          title
+          path
+        }
       }
     }
   }
   
-  tags: allProjectTag(filter: { title: {in: ["blockchain", "experience", "technology", "farming", "community", "infrastructure", "impact"]}}){
+  tags: allProjectTag (filter: { title: {in: ["blockchain", "experience", "technology", "farming", "community", "infrastructure", "impact"]}}) {
      edges{
       node{
         id
@@ -86,28 +65,16 @@ query($page: Int){
 <script>
 import PostListItem from "~/components/custom/Cards/PostListItem.vue";
 import TagFilterHeader from "~/components/custom/TagFilterHeader.vue";
-import Pagination from "~/components/custom/Pagination.vue";
 
 export default {
   components: {
     PostListItem,
     TagFilterHeader,
-    Pagination,
   },
   metaInfo() {
     return {
       title: this.pageName,
     };
-  },
-  data() {
-    return {
-      selected: "All",
-    };
-  },
-  methods: {
-    resetAll() {
-      this.selected = "All";
-    },
   },
   computed: {
     tags() {
@@ -118,12 +85,9 @@ export default {
       return res;
     },
     pageName() {
-      let path = this.$route.path.replace(/^\/|\/$/g, "");
+      let path = this.$route.path.substring(1);
       let name = path[0].toUpperCase() + path.slice(1);
       return name;
-    },
-    baseurl() {
-      return "/projects/";
     },
   },
 };

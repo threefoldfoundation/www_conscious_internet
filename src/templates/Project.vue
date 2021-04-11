@@ -1,6 +1,6 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
-    <div class="container sm:pxi-0 mx-auto px-4 overflow-x-hidden pt-24">
+    <div class="container sm:pxi-0 mx-auto overflow-x-hidden pt-24">
       <div class="flex flex-row flex-wrap items-center mx-4 sm:mx-0">
         <div class="w-full md:w-1/6 mx-auto sm:mx-0">
           <g-image
@@ -78,13 +78,13 @@
                 </li>
               </ul>
 
-              <!-- <g-link
-                v-for="edge in $page.tags.edges"
-                :key="edge.node.id"
-                :to="edge.node.path"
+              <g-link
+                v-for="tag in $page.project.tags"
+                :key="tag.id"
+                :to="tag.path"
                 class="text-xs bg-transparent hover:text-blue-700 py-2 px-4 mr-2 border hover:border-blue-500 border-gray-600 text-gray-700 rounded-full"
-                >{{ edge.node.title }}</g-link
-              > -->
+                >{{ tag.title }}</g-link
+              >
             </section>
           </div>
         </div>
@@ -109,6 +109,7 @@
       id
       title
       countries
+      humanTime : created(format:"DD MMMM YYYY")
       datetime : created(format:"ddd MMM DD YYYY hh:mm:ss zZ")
       image(width:150, height:150)
       image_caption
@@ -155,6 +156,11 @@
                   path
                   logo
                   image
+                  tags {
+                    id
+                    title
+                    path
+                  }
               }
             }
           }
