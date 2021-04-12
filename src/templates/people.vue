@@ -45,7 +45,7 @@ query ($private: Int){
     }
   }
 
-   memberships: allMembership(filter: {title: {in: ["cofounders", "tech", "foundation", "ambassadors", "matchmakers", "farmers", "aci_members", "partners", "wisdom_council", "technology_council", "grid_guardians"]}}){
+   memberships: allMembership{
      edges{
       node{
         id
