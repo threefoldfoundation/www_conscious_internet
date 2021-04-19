@@ -1,6 +1,9 @@
 ---
 id: wisdomcouncil
 title: ''
+metaTitle: ACI | Wisdom Council
+metaDesc: In order to make balanced, fair and effective decisions regarding ThreeFold Foundation funds distribution, ThreeFold Foundation has adopted the Wisdom Council system as a resource model of harmonious communication.
+metaImg: ./wisdom_council.png
 headerSolution: header_wisdom
 solution_image: ./wisdom_council.png
 headerSolution2: header_wisdom_2
