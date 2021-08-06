@@ -1,6 +1,6 @@
 ---
 id: rights
-title: RIGHTS
+title: Rights
 description: ''
 button: ''
 link: '' #add button link here

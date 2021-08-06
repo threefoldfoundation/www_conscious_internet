@@ -2,8 +2,8 @@
 id: about_header
 title: ''
 subtitle: We declare a New Conscious Internet
-btn1: FreeFlow Nation
-link1: https://freeflownation.org/
+btn1: '' #FreeFlow Nation
+link1: '' #https://freeflownation.org/
 btn2: ''
 link2: ''
 ---

@@ -1,4 +1,4 @@
 ---
 id: header2
-subtitle: DECLARATION
+subtitle: Declaration
 ---
