@@ -42,12 +42,6 @@
         v-if="$page.markdownPage.headerSolution2"
         :header="$page.markdownPage.headerSolution2"
       />
-
-      <NewCard
-        v-for="card in $page.markdownPage.cards"
-        :key="card.id"
-        :card="card"
-      />
       
       <ShowcaseProducts
         v-if="
@@ -58,6 +52,12 @@
         :main="$page.markdownPage.productsMain"
         :products="$page.markdownPage.productData"
       />
+
+      <!-- <NewCard
+        v-for="card in $page.markdownPage.cards"
+        :key="card.id"
+        :card="card"
+      /> -->
 
       <!-- <HowItWorks
         v-if="$page.markdownPage.howItWorks.length > 0"

@@ -21,6 +21,9 @@ productData: [
   kristof_de_spiegeleer,
   dimitrios_dermentzioglou,
   dave_de_belder,
+  rudy_bouwman,
+  thibault_verbiest,
+  florian_flourier,
 ]
 ---
 
