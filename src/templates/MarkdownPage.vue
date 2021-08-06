@@ -48,6 +48,16 @@
         :key="card.id"
         :card="card"
       />
+      
+      <ShowcaseProducts
+        v-if="
+          $page.markdownPage.productData &&
+          $page.markdownPage.productData.length > 0
+        "
+        :id="$page.markdownPage.id"
+        :main="$page.markdownPage.productsMain"
+        :products="$page.markdownPage.productData"
+      />
 
       <!-- <HowItWorks
         v-if="$page.markdownPage.howItWorks.length > 0"
@@ -125,7 +135,7 @@
           websites
           location
         }
-      header{
+        header{
           title
           subtitle
           content
@@ -133,16 +143,16 @@
           link1
           btn2
           link2
-       }
-       headerSolution{
-         subtitle
-         content
-       }
+        }
+        headerSolution{
+          subtitle
+          content
+        }
         headerSolution2{
-        subtitle
-        content
-       }
-      comparisonMain{
+          subtitle
+          content
+        }
+        comparisonMain{
           id
           title
           description
@@ -155,16 +165,16 @@
           title
           content
         }
-       howItWorksMain{
-         id
-         title
-         image
-       }
+        howItWorksMain{
+          id
+          title
+          image
+        }
         howItWorks{
-         id
-         title
-         content
-       }
+          id
+          title
+          content
+        }
         featuresMain{
           id
           title
@@ -177,6 +187,23 @@
           title
           svg
           content
+        }
+        productsMain{
+          id
+          title
+          subtitle
+          content
+          button
+          link
+          image
+        }
+        productData{
+          id
+          title
+          content
+          image
+          button
+          link
         }
         logos{
           id
@@ -214,6 +241,7 @@ import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowc
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
 import SignUp from "~/components/custom/sections/SignUp.vue";
 import WisdomCouncilMemebersGrid from "~/components/marketing/sections/logo-clouds/off_white_grid.vue";
+import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
 
 export default {
   components: {
@@ -222,6 +250,7 @@ export default {
     Header,
     VerticalNav,
     SolutionsHeader,
+    ShowcaseProducts,
     HowItWorks,
     Features,
     logoShowcase,

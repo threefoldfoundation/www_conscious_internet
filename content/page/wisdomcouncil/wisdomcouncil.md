@@ -11,7 +11,17 @@ header_excerpt: It is a practice based upon ancient leadership practices and mod
 button: ''
 link: ''
 headerSolution2: header_wisdom_2
-
+productsMain: members
+productData: [
+  adnan_fatayerji,
+  sophie_monpeyssen,
+  rishi_chidananda,
+  owen_kemp,
+  michael_wellesley_wesley,
+  kristof_de_spiegeleer,
+  dimitrios_dermentzioglou,
+  dave_de_belder,
+]
 ---
 
 <!-- headerSolution: header_wisdom -->
