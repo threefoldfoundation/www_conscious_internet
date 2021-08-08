@@ -8,14 +8,24 @@
       <g-image :src="img(main.image)" class="hidden md:block" />
     </div>
 
-    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:hidden">
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
       <div
         v-for="(product, idx) in products"
         :key="idx"
         class="p-2 sm:p-0 text-center cursor-pointer"
       >
         <div
-          class="m-auto max-w-sm rounded overflow-hidden shadow-lg hover:bg-white transition duration-500 bg-white"
+          class="
+            m-auto
+            max-w-sm
+            rounded
+            overflow-hidden
+            shadow-lg
+            hover:bg-white
+            transition
+            duration-500
+            bg-white
+          "
         >
           <div class="px-2 py-2">
             <g-image :src="img(product.image)" />

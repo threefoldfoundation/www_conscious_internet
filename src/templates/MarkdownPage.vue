@@ -1,6 +1,6 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
-    <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5"> 
+    <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
       <Header
         :title="$page.markdownPage.header_title"
         :image="$page.markdownPage.header_image"
@@ -8,7 +8,7 @@
         :button="$page.markdownPage.button"
         :link="$url($page.markdownPage.link)"
       />
-      
+
       <SolutionsHeader
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
@@ -18,7 +18,7 @@
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
       />
-      
+
       <Comparison
         v-if="
           $page.markdownPage.comparisonSecs &&
@@ -32,7 +32,7 @@
         v-if="$page.markdownPage.headerSolution"
         :header="$page.markdownPage.headerSolution"
       />
-      
+
       <VerticalNav
         :slides="$page.markdownPage.slides"
         v-if="$page.markdownPage.slides && $page.markdownPage.slides.length > 0"
@@ -42,7 +42,7 @@
         v-if="$page.markdownPage.headerSolution2"
         :header="$page.markdownPage.headerSolution2"
       />
-      
+
       <ShowcaseProducts
         v-if="
           $page.markdownPage.productData &&
@@ -257,6 +257,9 @@ export default {
     CallToAction,
     SignUp,
   },
+  // mounted() {
+  //   console.log(this.$page.markdownPage.productData);
+  // },
   metaInfo() {
     return {
       title: "",
