@@ -44,7 +44,7 @@
         :header="$page.markdownPage.headerSolution2"
       />
 
-      <ShowcaseProducts
+      <!-- <ShowcaseProducts
         v-if="
           $page.markdownPage.productData &&
           $page.markdownPage.productData.length > 0
@@ -52,7 +52,7 @@
         :id="$page.markdownPage.id"
         :main="$page.markdownPage.productsMain"
         :products="$page.markdownPage.productData"
-      />
+      /> -->
 
       <!-- <NewCard
         v-for="card in $page.markdownPage.cards"
@@ -97,6 +97,16 @@
         v-if="$page.markdownPage.inTheNews"
         :news="$page.markdownPage.inTheNews"
       /> -->
+    </div>
+    <div class="container-fluid sm:pxi-0 mx-auto overflow-x-hidden py-5">
+      <div class="flex flex-wrap with-large pt-8 pb-8 mx-4 sm:-mx-4">
+        <PostListItem
+          :showtags="true"
+          v-for="person in $page.markdownPage.productData"
+          :key="person.id"
+          :record="person"
+        />
+      </div>
     </div>
   </Layout>
 </template>
@@ -243,6 +253,7 @@ import CallToAction from "~/components/custom/sections/CallToAction.vue";
 import SignUp from "~/components/custom/sections/SignUp.vue";
 import WisdomCouncilMemebersGrid from "~/components/marketing/sections/logo-clouds/off_white_grid.vue";
 import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
+import PostListItem from "~/components/custom/NewPostListItem.vue";
 
 export default {
   components: {
@@ -257,6 +268,8 @@ export default {
     logoShowcase,
     CallToAction,
     SignUp,
+    PostListItem,
+    WisdomCouncilMemebersGrid,
   },
   // mounted() {
   //   console.log(this.$page.markdownPage.productData);
@@ -364,4 +377,12 @@ export default {
 .gridsome-highlight pre[class*="language-"].line-numbers {
   padding-left: 2.8em;
 }
-</style> >
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+</style>
