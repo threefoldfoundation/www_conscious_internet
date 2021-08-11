@@ -99,7 +99,7 @@
       /> -->
     </div>
     <div class="container-fluid sm:pxi-0 mx-auto overflow-x-hidden py-5">
-      <div class="flex flex-wrap with-large pt-8 pb-8 mx-4 sm:-mx-4">
+      <div class="flex flex-wrap pt-8 pb-8 mx-4 sm:-mx-4">
         <PostListItem
           :showtags="true"
           v-for="person in $page.markdownPage.productData"

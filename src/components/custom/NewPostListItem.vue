@@ -88,4 +88,63 @@ export default {
 a {
   color: #70cfc7;
 }
+.flex-post {
+  border-bottom-width: 1px;
+  border-bottom-color: #e2e8f0;
+  flex-direction: column;
+  width: 62%;
+  flex: 1 1 200px;
+}
+@media (min-width: 768px) {
+  .flex-post .post-card-image {
+    height: 14rem;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    position: relative;
+  }
+  .flex-post:nth-child(7n) .post-card-image,
+  .flex-post:nth-child(7n-1) .post-card-image,
+  .flex-post:nth-child(7n-2) .post-card-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  .flex-post:nth-child(7n),
+  .flex-post:nth-child(7n-1),
+  .flex-post:nth-child(7n-2) {
+    flex: 1 1 33%;
+    flex-direction: column;
+  }
+  .flex-post:nth-child(7n) .post-card-image-link,
+  .flex-post:nth-child(7n-1) .post-card-image-link,
+  .flex-post:nth-child(7n-2) .post-card-image-link {
+    position: relative;
+    min-height: 400px;
+  }
+  .flex-post:nth-child(7n) .post-card-image,
+  .flex-post:nth-child(7n-1) .post-card-image,
+  .flex-post:nth-child(7n-2) .post-card-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  .flex-post:nth-child(7n) .post-card-title,
+  .flex-post:nth-child(7n-1) .post-card-title,
+  .flex-post:nth-child(7n-2) .post-card-title {
+    font-size: 2.25rem;
+  }
+  .flex-post:nth-child(7n) .post-card-excerpt,
+  .flex-post:nth-child(7n-1) .post-card-excerpt,
+  .flex-post:nth-child(7n-2) .post-card-excerpt {
+    font-size: 1.25rem;
+  }
+}
 </style>
