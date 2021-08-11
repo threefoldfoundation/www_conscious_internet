@@ -139,7 +139,7 @@ a {
   .flex-post:nth-child(7n) .post-card-title,
   .flex-post:nth-child(7n-1) .post-card-title,
   .flex-post:nth-child(7n-2) .post-card-title {
-    font-size: 2.25rem;
+    font-size: 1.25rem;
   }
   .flex-post:nth-child(7n) .post-card-excerpt,
   .flex-post:nth-child(7n-1) .post-card-excerpt,
