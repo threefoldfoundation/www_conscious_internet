@@ -93,9 +93,9 @@ a {
   border-bottom-color: #e2e8f0;
   flex-direction: column;
   width: 62%;
-  flex: 1 1 200px;
+  flex: 1 1 250px;
 }
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .flex-post .post-card-image {
     height: 14rem;
     width: 100%;
@@ -104,7 +104,7 @@ a {
     border-radius: 0.25rem;
     position: relative;
   }
-  .flex-post:nth-child(7n) .post-card-image,
+  .flex-post:nth-child(3n) .post-card-image,
   .flex-post:nth-child(7n-1) .post-card-image,
   .flex-post:nth-child(7n-2) .post-card-image {
     position: absolute;
@@ -146,5 +146,5 @@ a {
   .flex-post:nth-child(7n-2) .post-card-excerpt {
     font-size: 1.25rem;
   }
-}
+} */
 </style>
