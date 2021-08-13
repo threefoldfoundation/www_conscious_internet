@@ -23,7 +23,7 @@ productData: [
   dave_de_belder,
   rudy_bouwman,
   thibault_verbiest,
-  florian_flourier,
+  florian_fournier,
   ali_mohsen,
 ]
 ---
