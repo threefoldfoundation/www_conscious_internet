@@ -24,7 +24,6 @@ productData: [
   rudy_bouwman,
   thibault_verbiest,
   florian_fournier,
-  ali_mohsen,
 ]
 ---
 
