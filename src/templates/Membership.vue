@@ -122,7 +122,7 @@ export default {
       } else if (this.$page.membership.title == "technology_council") {
         return "https://threefold.io/info/threefold#/threefold__technology_council";
       } else if (this.$page.membership.title == "wisdom_council") {
-        return "https://threefold.io/aci/wisdomcouncil";
+        return "https://www.consciousinternet.org//wisdomcouncil";
       }
     },
   },
