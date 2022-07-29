@@ -1,0 +1,16 @@
+<!--
+  Tailwind UI components require Tailwind CSS v1.8 and the @tailwindcss/ui plugin.
+  Read the documentation to get started: https://tailwindui.com/documentation
+-->
+
+{%- set section = get_section(path="footer/_index.md") %}
+{%- set logoPath = section.extra.logoPath %}
+
+<html>
+    <head /><body>
+        <footer class="bg-white">
+                {{ section.content | safe }}
+        </footer>
+        </body>
+        </html>
+        

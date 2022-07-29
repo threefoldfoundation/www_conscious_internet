@@ -7,14 +7,6 @@ header: about_header
 solution_image: ./declaration.jpg
 comparisonMain: rights
 comparisonSecs: [sec1, sec2, sec3]
-headerSolution: header2
-slides:
-  [
-    power,
-    respect,
-    recources,
-    honesty,
-    humanity,
-  ]
+headerSolution: header2s
 cta: about_cta
 ---
